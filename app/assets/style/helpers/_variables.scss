@@ -12,7 +12,7 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #707070 !default; //edit dark #6c757d
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
@@ -67,14 +67,14 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #907A7B !default; // edit brown
+$secondary:     #C0A4A5  !default; //edit pink
 $success:       $green !default;
 $info:          $cyan !default;
-$warning:       $yellow !default;
+$warning:       #F5F0E7 !default; //edit yellow
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$dark:          $gray-600 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +86,10 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "white":      $white, //edit
+  "black":      $black //edit
+
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -224,7 +227,7 @@ $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default; //edit
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -250,11 +253,20 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer / 4,  //4
+  2: $spacer / 2,  //8
+  3: $spacer * .75, //12 
+  4: $spacer ,        //16
+  5: $spacer * 1.125,  // 18
+  6: $spacer * 1.25,  // 20
+  7: $spacer * 1.5, //24 
+  8: $spacer * 1.75, // 28
+  9: $spacer * 1.875, // 30
+  10: $spacer * 2,   // 32
+  11: $spacer * 2.25,  //36
+  12: $spacer * 2.5, // 40 
+	13: $spacer * 3, // 48 
+  14: $spacer * 3.75, //60
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -277,7 +289,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $primary !default; //edit
 $body-text-align:           null !default;
 
 
@@ -285,8 +297,8 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-color:                              $white !default;
+$link-decoration:                         none !default; //edit
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -367,13 +379,15 @@ $border-widths: (
   5: 5px
 ) !default;
 
-$border-color:                $gray-300 !default;
+$border-color:                $secondary !default; //edit
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
 $border-radius:               .25rem !default;
 $border-radius-sm:            .2rem !default;
 $border-radius-lg:            .3rem !default;
+$border-radius-xl:            .3125rem !default; //edit 5px
+$border-radius-xxl:            1rem !default; //edit 16px
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 
@@ -416,7 +430,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "source-han-sans-traditional",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
@@ -432,6 +446,7 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-md:              500 !default; //edit
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
@@ -441,12 +456,14 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.25 !default;   //40
+$h2-font-size:                $font-size-base * 2.25 !default; //36 edit
+$h3-font-size:                $font-size-base * 2 !default;    //32
+$h4-font-size:                $font-size-base * 1.75 !default; //28
+$h5-font-size:                $font-size-base * 1.5 !default; //24
+$h6-font-size:                $font-size-base * 1.25 !default;  //20
+$h7-font-size:                $font-size-base  !default; //16 edit
+$h8-font-size:                $font-size-base * 0.875 !default; // 14 edit
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -456,7 +473,9 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size
 ) !default;
 // scss-docs-end font-sizes
 
@@ -644,6 +663,8 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-border-radius:           $border-radius !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
+$btn-border-radius-xl:        $border-radius-xl !default; //edit
+$btn-border-radius-xxl:        $border-radius-xxl !default; //edit
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -697,7 +718,7 @@ $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
-$input-border-color:                    $gray-400 !default;
+$input-border-color:                    $pink !default; //edit
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
@@ -711,7 +732,7 @@ $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               $secondary !default; //edit
 $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
@@ -917,8 +938,8 @@ $zindex-tooltip:                    1080 !default;
 // Navs
 
 // scss-docs-start nav-variables
-$nav-link-padding-y:                .5rem !default;
-$nav-link-padding-x:                1rem !default;
+$nav-link-padding-y:                0 !default; //edit .5 to 0
+$nav-link-padding-x:                0 !default; //edit 1 to 0
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    $link-color !default;
