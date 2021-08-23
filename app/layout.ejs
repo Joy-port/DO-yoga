@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'ngn0vic',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: "ngn0vic",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
   </head>
@@ -23,19 +54,30 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0">
       <div class="container-fluid py-6">
-        <a class="navbar-brand" href="#"> <img
-          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true"
-          alt="logo"
-          style="width: 96px; height: 31px"
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true"
+            alt="logo"
+            style="width: 96px; height: 31px"
         /></a>
-        <button class="navbar-toggler border-0 link-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler border-0 link-secondary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- pc 置中 mx-auto 可以延伸 -->
           <ul class="navbar-nav text-center mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link px-5 py-2 py-lg-0" aria-current="page" href="#">課程介紹</a>
+              <a class="nav-link px-5 py-2 py-lg-0" aria-current="page" href="#"
+                >課程介紹</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link px-5 py-2 py-lg-0" href="#">瑜珈空間</a>
@@ -45,7 +87,9 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center | flex-lg-row">
-            <a href="#" class="btn btn-outline-primary fs-7 btn-lg me-5">立即預約</a>
+            <a href="#" class="btn btn-outline-primary fs-7 btn-lg me-5"
+              >立即預約</a
+            >
             <a href="#" class="btn btn-outline-primary fs-7 btn-lg">聯絡我們</a>
           </div>
         </div>
@@ -57,5 +101,4 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>

@@ -21,3 +21,15 @@
     border-radius: 16px;
 }
 
+.card-img{
+    object-fit: cover;
+    object-position: center;
+
+    &-bottom{
+        object-position: bottom;
+}
+}
+
+.card{
+    border-radius: 16px;
+}
