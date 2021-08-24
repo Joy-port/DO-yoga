@@ -11286,6 +11286,42 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
+.opacity-1 {
+  opacity: 0.1 !important;
+}
+
+.opacity-2 {
+  opacity: 0.2 !important;
+}
+
+.opacity-3 {
+  opacity: 0.3 !important;
+}
+
+.opacity-4 {
+  opacity: 0.4 !important;
+}
+
+.opacity-5 {
+  opacity: 0.5 !important;
+}
+
+.opacity-6 {
+  opacity: 0.6 !important;
+}
+
+.opacity-7 {
+  opacity: 0.7 !important;
+}
+
+.opacity-8 {
+  opacity: 0.8 !important;
+}
+
+.opacity-9 {
+  opacity: 0.9 !important;
+}
+
 .overflow-x-auto {
   overflow-x: auto !important;
 }
@@ -13099,6 +13135,33 @@ fieldset:disabled .btn {
     border-bottom-left-radius: 50rem !important;
     border-top-left-radius: 50rem !important;
   }
+  .opacity-sm-1 {
+    opacity: 0.1 !important;
+  }
+  .opacity-sm-2 {
+    opacity: 0.2 !important;
+  }
+  .opacity-sm-3 {
+    opacity: 0.3 !important;
+  }
+  .opacity-sm-4 {
+    opacity: 0.4 !important;
+  }
+  .opacity-sm-5 {
+    opacity: 0.5 !important;
+  }
+  .opacity-sm-6 {
+    opacity: 0.6 !important;
+  }
+  .opacity-sm-7 {
+    opacity: 0.7 !important;
+  }
+  .opacity-sm-8 {
+    opacity: 0.8 !important;
+  }
+  .opacity-sm-9 {
+    opacity: 0.9 !important;
+  }
   .overflow-x-sm-auto {
     overflow-x: auto !important;
   }
@@ -14905,6 +14968,33 @@ fieldset:disabled .btn {
   .rounded-start-md-pill {
     border-bottom-left-radius: 50rem !important;
     border-top-left-radius: 50rem !important;
+  }
+  .opacity-md-1 {
+    opacity: 0.1 !important;
+  }
+  .opacity-md-2 {
+    opacity: 0.2 !important;
+  }
+  .opacity-md-3 {
+    opacity: 0.3 !important;
+  }
+  .opacity-md-4 {
+    opacity: 0.4 !important;
+  }
+  .opacity-md-5 {
+    opacity: 0.5 !important;
+  }
+  .opacity-md-6 {
+    opacity: 0.6 !important;
+  }
+  .opacity-md-7 {
+    opacity: 0.7 !important;
+  }
+  .opacity-md-8 {
+    opacity: 0.8 !important;
+  }
+  .opacity-md-9 {
+    opacity: 0.9 !important;
   }
   .overflow-x-md-auto {
     overflow-x: auto !important;
@@ -16713,6 +16803,33 @@ fieldset:disabled .btn {
     border-bottom-left-radius: 50rem !important;
     border-top-left-radius: 50rem !important;
   }
+  .opacity-lg-1 {
+    opacity: 0.1 !important;
+  }
+  .opacity-lg-2 {
+    opacity: 0.2 !important;
+  }
+  .opacity-lg-3 {
+    opacity: 0.3 !important;
+  }
+  .opacity-lg-4 {
+    opacity: 0.4 !important;
+  }
+  .opacity-lg-5 {
+    opacity: 0.5 !important;
+  }
+  .opacity-lg-6 {
+    opacity: 0.6 !important;
+  }
+  .opacity-lg-7 {
+    opacity: 0.7 !important;
+  }
+  .opacity-lg-8 {
+    opacity: 0.8 !important;
+  }
+  .opacity-lg-9 {
+    opacity: 0.9 !important;
+  }
   .overflow-x-lg-auto {
     overflow-x: auto !important;
   }
@@ -18520,6 +18637,33 @@ fieldset:disabled .btn {
     border-bottom-left-radius: 50rem !important;
     border-top-left-radius: 50rem !important;
   }
+  .opacity-xl-1 {
+    opacity: 0.1 !important;
+  }
+  .opacity-xl-2 {
+    opacity: 0.2 !important;
+  }
+  .opacity-xl-3 {
+    opacity: 0.3 !important;
+  }
+  .opacity-xl-4 {
+    opacity: 0.4 !important;
+  }
+  .opacity-xl-5 {
+    opacity: 0.5 !important;
+  }
+  .opacity-xl-6 {
+    opacity: 0.6 !important;
+  }
+  .opacity-xl-7 {
+    opacity: 0.7 !important;
+  }
+  .opacity-xl-8 {
+    opacity: 0.8 !important;
+  }
+  .opacity-xl-9 {
+    opacity: 0.9 !important;
+  }
   .overflow-x-xl-auto {
     overflow-x: auto !important;
   }
@@ -20326,6 +20470,33 @@ fieldset:disabled .btn {
   .rounded-start-xxl-pill {
     border-bottom-left-radius: 50rem !important;
     border-top-left-radius: 50rem !important;
+  }
+  .opacity-xxl-1 {
+    opacity: 0.1 !important;
+  }
+  .opacity-xxl-2 {
+    opacity: 0.2 !important;
+  }
+  .opacity-xxl-3 {
+    opacity: 0.3 !important;
+  }
+  .opacity-xxl-4 {
+    opacity: 0.4 !important;
+  }
+  .opacity-xxl-5 {
+    opacity: 0.5 !important;
+  }
+  .opacity-xxl-6 {
+    opacity: 0.6 !important;
+  }
+  .opacity-xxl-7 {
+    opacity: 0.7 !important;
+  }
+  .opacity-xxl-8 {
+    opacity: 0.8 !important;
+  }
+  .opacity-xxl-9 {
+    opacity: 0.9 !important;
   }
   .overflow-x-xxl-auto {
     overflow-x: auto !important;
