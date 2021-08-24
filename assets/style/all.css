@@ -30,6 +30,16 @@
   }
 }
 
+.img-s-m-2 {
+  height: 218px;
+}
+
+@media (min-width: 768px) {
+  .img-s-m-2 {
+    height: 341px;
+  }
+}
+
 .img-square-s-m {
   height: 165px;
 }
