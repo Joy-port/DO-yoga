@@ -720,7 +720,7 @@ $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
-$input-border-color:                    $pink !default; //edit
+$input-border-color:                    $secondary !default; //edit
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
@@ -1104,12 +1104,12 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
-$card-title-spacer-y:               $spacer * .5 !default;
+$card-spacer-y:                     $spacer * 1.5 !default; //$spacer 改成 16- 24px
+$card-spacer-x:                     $spacer * 1.5 !default; //$spacer 改成 16- 24px
+$card-title-spacer-y:               $spacer * .25 !default; //*.5 變成 *.25
 $card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+$card-border-radius:                $spacer !default; //edit
+$card-border-color:                 $secondary !default; //rgba($black, .125)
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
