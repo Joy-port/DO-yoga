@@ -1,7 +1,22 @@
 //+ fw-md //change  //h+responsive
 $utilities: map-merge(
   $utilities,
-  (
+  ( 
+    "opacity": (
+      responsive: true,
+      property: opacity,
+      values: (
+        1: .1,
+        2: .2,
+        3: .3,
+        4: .4,
+        5: .5,
+        6: .6,
+        7: .7,
+        8: .8,
+        9: .9,
+    ),
+    ),
     "overflow-x": (
       responsive: true,
       property: overflow-x,
