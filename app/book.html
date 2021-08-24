@@ -3,225 +3,34 @@ title: Doyoga - booking
 layout: ./app/layout.ejs
 engine: ejs
 current: book
-terms: " "
+terms: "d-none "
 ---
 
 <nav>
   <div class="container-lg pt-16">
     <h2 class="h4 text-center mb-7 mb-md-4">立即預約</h2>
-    <ul class="nav nav-tabs border-0 justify-content-center mb-10"  id="booking-tab" role="tablist">
-      <li class="nav-item col-4 col-md-2"  role="presentation">
-        <a
-          href="#"
-          class="nav-link bg-warning fs-7 rounded-5 link-primary py-2 px-4"
-          id="booking-programm-tab" data-bs-toggle="booking" data-bs-target="#booking-programm" type="button" role="tab" aria-controls="booking-programm" aria-selected="true"
-          >選擇方案</a
-        >
+
+    <!-- 修改版本 -->
+    <ul class="nav nav-pills row justify-content-center mb-10" id="booking-tab" role="tablist">
+      <li class="nav-item col-4 col-md-2" role="presentation">
+        <button class="nav-link bg-warning fs-7 rounded-5 link-primary py-2 px-4 w-100" id="booking-programm-tab" data-bs-toggle="pill" data-bs-target="#booking-programm" type="button" role="tab" aria-controls="booking-programm" aria-selected="true">選擇方案</button>
       </li>
-      <li class="nav-item col-4 col-md-2"  role="presentation">
-        <a
-          href="#"
-          class="nav-link btn-lg link-primary fs-7 rounded-5 py-2 px-4"
-          id="booking-form-tab" data-bs-toggle="booking" data-bs-target="#booking-form" type="button" role="tab" aria-controls="booking-form" aria-selected="false"
-          >填寫資料</a
-        >
+      <li class="nav-item col-4 col-md-2" role="presentation">
+        <button class="nav-link bg-warning fs-7 rounded-5 link-primary py-2 px-4 w-100" id="booking-form-tab" data-bs-toggle="pill" data-bs-target="#booking-form" type="button" role="tab" aria-controls="booking-form" aria-selected="false">填寫資料</button>
       </li>
-      <li class="nav-item col-4 col-md-2"  role="presentation">
-        <a
-          href="#"
-          class="nav-link btn-lg link-primary fs-7 rounded-5 py-2 px-4"
-          id="booking-success-tab" data-bs-toggle="booking" data-bs-target="#booking-success" type="button" role="tab" aria-controls="booking-success" aria-selected="false"
-          >完成預約</a
-        >
+      <li class="nav-item col-4 col-md-2" role="presentation">
+        <button class="nav-link bg-warning fs-7 rounded-5 link-primary py-2 px-4 w-100" id="booking-success-tab" data-bs-toggle="pill" data-bs-target="#booking-success" type="button" role="tab" aria-controls="booking-success" aria-selected="false">完成預約</button>
       </li>
     </ul>
     </div>
 </nav>
-<!-- 修改版本 -->
-<ul class="nav nav-pills row justify-content-center mb-10" id="booking-tab" role="tablist">
-  <li class="nav-item col-4 col-md-2" role="presentation">
-    <button class="nav-link bg-warning fs-7 rounded-5 link-primary py-2 px-4 w-100" id="booking-programm-tab" data-bs-toggle="pill" data-bs-target="#booking-programm" type="button" role="tab" aria-controls="booking-programm" aria-selected="true">選擇方案</button>
-  </li>
-  <li class="nav-item col-4 col-md-2" role="presentation">
-    <button class="nav-link bg-warning fs-7 rounded-5 link-primary py-2 px-4 w-100" id="booking-form-tab" data-bs-toggle="pill" data-bs-target="#booking-form" type="button" role="tab" aria-controls="booking-form" aria-selected="false">填寫資料</button>
-  </li>
-  <li class="nav-item col-4 col-md-2" role="presentation">
-    <button class="nav-link bg-warning fs-7 rounded-5 link-primary py-2 px-4 w-100" id="booking-success-tab" data-bs-toggle="pill" data-bs-target="#booking-success" type="button" role="tab" aria-controls="booking-success" aria-selected="false">完成預約</button>
-  </li>
-</ul>
-
-<!-- 修改內容頁 -->
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="booking-programm" role="tabpanel" aria-labelledby="booking-programm-tab">
-    <div class="container-lg pb-13">
-      <ul class="row">
-        <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0">
-          <div class="card border-1 rounded-16 card-m-s-m px-0">
-            <div class="row g-0 h-100">
-              <div class="col-md-6 col-lg-12 h-50 h-md-100 h-lg-50">
-                <img
-                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
-                  alt="yoga img"
-                  class="
-                    card-img
-                    rounded-bottom-0
-                    rounded-md-5
-                    rounded-end-md-0
-                    rounded-lg-5
-                    rounded-bottom-lg-0
-                    h-100
-                  "
-                />
-              </div>
-              <div class="col-md-6 col-lg-12 h-auto">
-                <div
-                  class="
-                    card-body
-                    text-center text-md-start
-                    my-md-auto
-                    text-lg-center
-                  "
-                >
-                  <p class="h6 mb-1">首次體驗</p>
-                  <p class="h6 text-secondary mb-2">NT $450 / 次</p>
-                  <p class="mb-12 text-start">
-                    分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
-                  </p>
-                  <a
-                    href="#"
-                    class="
-                      btn btn-secondary btn-lg
-                      w-100
-                      link-white
-                      h6
-                      stretched-link
-                    "
-                    data-bs-toggle="collapse"
-                    data-bs-target="#courseChoiceCollapse"
-                    aria-expanded="false"
-                    aria-controls="courseChoiceCollapse firstTryPackage"
-                    >選擇課程</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0">
-          <div class="card border-1 rounded-16 card-m-s-m px-0">
-            <div class="row g-0 h-100">
-              <div class="col-md-6 col-lg-12 h-50 h-md-100 h-lg-50">
-                <img
-                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true"
-                  alt="yoga img"
-                  class="
-                    card-img
-                    rounded-bottom-0
-                    rounded-md-5
-                    rounded-end-md-0
-                    rounded-lg-5
-                    rounded-bottom-lg-0
-                    h-100
-                  "
-                />
-              </div>
-              <div class="col-md-6 col-lg-12 h-auto">
-                <div
-                  class="
-                    card-body
-                    text-center text-md-start
-                    my-md-auto
-                    text-lg-center
-                  "
-                >
-                  <p class="h6 mb-1">短期體驗</p>
-                  <p class="h6 text-secondary mb-2">NT $1800 / 月</p>
-                  <p class="mb-12 text-start">
-                    分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
-                  </p>
-                  <a
-                    href="#"
-                    class="
-                      btn btn-secondary btn-lg
-                      w-100
-                      link-white
-                      h6
-                      stretched-link
-                    "
-                    data-bs-toggle="collapse"
-                    data-bs-target="#courseChoiceCollapse"
-                    aria-expanded="false"
-                    aria-controls="courseChoiceCollapse intermediateProgramm"
-                    >選擇課程</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="col-lg-4">
-          <div class="card border-1 rounded-16 card-m-s-m px-0">
-            <div class="row g-0 h-100">
-              <div class="col-md-6 col-lg-12 h-50 h-md-100 h-lg-50">
-                <img
-                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true"
-                  alt="yoga img"
-                  class="
-                    card-img
-                    rounded-bottom-0
-                    rounded-md-5
-                    rounded-end-md-0
-                    rounded-lg-5
-                    rounded-bottom-lg-0
-                    h-100
-                  "
-                />
-              </div>
-              <div class="col-md-6 col-lg-12 h-auto">
-                <div
-                  class="
-                    card-body
-                    text-center text-md-start
-                    my-md-auto
-                    text-lg-center
-                  "
-                >
-                  <p class="h6 mb-1">長期體驗</p>
-                  <p class="h6 text-secondary mb-2">NT $5600 / 季</p>
-                  <p class="mb-12 text-start">
-                    分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
-                  </p>
-                  <a
-                    href="#"
-                    class="
-                      btn btn-secondary btn-lg
-                      w-100
-                      link-white
-                      h6
-                      stretched-link
-                    "
-                    data-bs-toggle="collapse"
-                    data-bs-target="#courseChoiceCollapse"
-                    aria-expanded="false"
-                    aria-controls="courseChoiceCollapse advancedProgramm"
-                    >選擇課程</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="tab-pane fade" id="booking-form" role="tabpanel" aria-labelledby="booking-form-tab"><p>profile</p></div>
-  <div class="tab-pane fade" id="booking-success" role="tabpanel" aria-labelledby="booking-success-tab"><p>contact</p></div>
-</div>
 
 <section>
-  <div class="tab-content" id="booking-tabContent">
-  <!-- 選擇方案 -->
-  <div class="tab-pane fade show" id="booking-programm" role="tabpanel" aria-labelledby="booking-programm-tab">
+<!-- 修改內容頁 -->
+<div class="tab-content" id="pills-tabContent">
+    <!-- 選擇方案 -->
+  <div class="tab-pane fade show active" id="booking-programm" role="tabpanel" aria-labelledby="booking-programm-tab">
+    <!-- 方案內容 -->
     <div class="container-lg pb-13">
       <ul class="row">
         <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0">
@@ -382,21 +191,7 @@ terms: " "
         </li>
       </ul>
     </div>
-  </div>
-  <!-- 填寫表單 -->
-  <div class="tab-pane fade show" id="booking-form" role="tabpanel" aria-labelledby="booking-form-tab">
-   <p>form</p>
-  </div>
-
-  <!-- 完成預約 -->
-  <div class="tab-pane fade show" id="booking-success" role="tabpanel" aria-labelledby="booking-success-tab">
-    <p>success</p>
-  </div>
-  </div>
-</section>
-
-
-  <!-- 選擇方案 collapse -->
+    <!-- 選擇方案 collapse -->
   <div class="collapse" id="courseChoiceCollapse">
     <div class="bg-primary pt-10 pb-12">
       <div class="container-lg">
@@ -458,8 +253,163 @@ terms: " "
   <div class="comtainer-lg pt-10 text-center" id="firstTryPackage">
     <p class="text-secondary">你選擇的是</p>
     <p class="h6 text-secondary mb-7">首次體驗課程-基礎</p>
-    <a href="#" class="btn btn-secondary h6 btn-lg rounded-4 link-white">繼續預約</a>
   </div>
   
   </div>
+      <!-- 預約須知 -->
+      <div class="container-lg mb-80  mt-12 mt-md-10 <%- terms %>">
+        <h3 class="mb-4 h4 text-center">預約須知</h3>
+        <div class="row justify-content-center mb-2 mb-md-0">
+        <ul class="col-md-8 col-lg-6 mb-lg-7">
+          <li class="mb-1">1. 如果有特殊體質、特殊狀況，請主動告知。</li>
+          <li class="mb-1">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
+          <li class="mb-1">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
+          <li class="mb-1">4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+        </ul>
+        <div class="col-12 col-md-8 text-center">
+          <a href="#" class="btn btn-secondary h6 btn-lg rounded-4 link-white">繼續預約</a>
+        </div>
+      </div>
+     
+      </div>
+  </div>
+    <!-- 填寫表單 -->
+  <div class="tab-pane fade" id="booking-form" role="tabpanel" aria-labelledby="booking-form-tab">
+    <div class="container-lg pb-80 mb-md-7">
+      <p class="text-center mb-7">你選擇的是 <span class="h6 text-secondary"> 首次體驗課程-基礎</span></p>
+      <form class="row justify-content-center">
+        <ul class="col-md-4"> 
+          <li class="mb-10">
+            <p class="mb-4">1. 是否接觸過瑜珈?</p>
+            <div class="form-check form-check-inline me-10">
+              <input class="form-check-input" type="radio" name="yoga Experience" id="yogaExperienceY">
+              <label class="form-check-label" for="yogaExperienceY">
+                是
+              </label> 
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="yoga Experience" id="yogaExperienceN">
+              <label class="form-check-label" for="yogaExperienceN">
+                否
+              </label>
+          </div>
+          </li>
+          <li class="mb-10">
+            <p class="mb-4">2. 想改善的生活問題?</p>
+            <div class="row gx-0">
+              <div class="col-4 form-check">
+                <input class="form-check-input" type="checkbox" name="problem Unsolved" id="problemUnsolved1">
+                <label class="form-check-label" for="problemUnsolved1">
+                  肌耐力不足
+                </label> 
+              </div>
+              <div class="col-4 form-check">
+                <input class="form-check-input" type="checkbox" name="problem Unsolved" id="problemUnsolved2">
+                <label class="form-check-label" for="problemUnsolved2">
+                  柔軟度不佳
+                </label> 
+              </div>
+              <div class="col-4 form-check">
+                <input class="form-check-input" type="checkbox" name="problem Unsolved" id="problemUnsolved3">
+                <label class="form-check-label" for="problemUnsolved3">
+                  壓力大
+                </label> 
+              </div>
+              <div class="col-4 form-check">
+                <input class="form-check-input" type="checkbox" name="problem Unsolved" id="problemUnsolved4">
+                <label class="form-check-label" for="problemUnsolved4">
+                  姿勢不正
+                </label> 
+              </div>
+              <div class="col-4 form-check">
+                <input class="form-check-input" type="checkbox" name="problem Unsolved" id="problemUnsolved5">
+                <label class="form-check-label" for="problemUnsolved5">
+                  睡眠品質差
+                </label> 
+              </div>
+              <div class="col-4 form-check">
+                <input class="form-check-input" type="checkbox" name="problem Unsolved" id="problemUnsolved6">
+                <label class="form-check-label" for="problemUnsolved6">
+                  注意力不足
+                </label> 
+              </div>
+            </div>
+          </li>
+          <li class="mb-10">
+            <p class="mb-4">3. 每週累積運動量約為多少？</p>
+            <div class="row gx-0">
+            <div class="col-6 form-check">
+              <input class="form-check-input" type="radio" name="weeklyExerciseDuration" id="weeklyExerciseDuration1">
+              <label class="form-check-label" for="weeklyExerciseDuration1">
+                150 分鐘以上
+              </label> 
+            </div>
+            <div class="col-6 form-check">
+            <input class="form-check-input" type="radio" name="weeklyExerciseDuration" id="weeklyExerciseDuration2">
+              <label class="form-check-label" for="weeklyExerciseDuration2">
+                75~150 分鐘
+              </label>
+            </div>
+            <div class="col-6 form-check">
+              <input class="form-check-input" type="radio" name="weeklyExerciseDuration" id="weeklyExerciseDuration3">
+              <label class="form-check-label" for="weeklyExerciseDuration3">
+                30~75 分鐘
+              </label> 
+            </div>
+            <div class="col-6 form-check">
+            <input class="form-check-input" type="radio" name="weeklyExerciseDuration" id="weeklyExerciseDuration4">
+              <label class="form-check-label" for="weeklyExerciseDuration4">
+                30 分鐘以下
+              </label>
+            </div>
+          </div>
+          </li>
+          <li class="mb-10">
+            <p class="mb-1">4. 上課預約報到日</p>
+            <p class="mb-2">若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</p>
+              <input class="border-1 border-secondary rounded-4 text-secondary" type="date" value="" id="informDate">
+              <label class="" for="informDate"></label>
+          </li>
+          <li class="mb-10">
+            <p class="mb-1">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p> 
+            <div class="row">
+              <div class="col-6 mb-4">
+                <label for="name" class="mb-2">姓名</label>
+                <input type="text" class="form-control" id="name" placeholder="請輸入您的姓名">
+              </div>
+              <div class="col-6 mb-4">
+                <label for="age" class="mb-2">年齡</label>
+                <input type="text" class="form-control" id="age" placeholder="請輸入您的年齡">
+              </div>
+            <div class="col-2 mb-4">
+              <label for="sex" class="mb-2">性別</label>
+              <select class="form-select" aria-label="select gender">
+                <option selected>不公開</option>
+                <option value="男">男</option>
+                <option value="女">女</option>
+              </select>
+            </div>
+            <div class="col-12 mb-4">
+              <label for="email" class="mb-2">電子信箱</label>
+              <input type="email" class="form-control" id="email" placeholder="email@example.com">
+            </div>
+            <div class="col-12">
+              <label for="tel" class="mb-2">電子信箱</label>
+              <input type="tel" class="form-control" id="tel" placeholder="0912-345-678">
+            </div>
+          </div>
+          </li>
+          <li class="mb-2"><button type="submit" class="btn btn-secondary btn-lg h6 link-white w-100 rounded-4">送出</button></li>
+        </ul>
+        
+        
+      </form>
+    </div>
+
+  </div>
+    <!-- 完成預約 -->
+  <div class="tab-pane fade" id="booking-success" role="tabpanel" aria-labelledby="booking-success-tab"><p>contact</p></div>
 </div>
+
+</div>
+</section>
