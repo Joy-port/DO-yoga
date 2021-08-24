@@ -106,9 +106,109 @@ $utilities: map-merge(
             map-merge(
               map-get(map-get($utilities, "font-weight"), "values"),
               (
-                medium: $font-weight-md,
+                md: $font-weight-md,
               )
             ),
+        )
+      ),
+
+      "rounded":
+      map-merge(
+        map-get($utilities, "rounded"),
+        (
+          responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              4: $border-radius-xl, //edit
+              5: $border-radius-xxl, //edit
+            )
+          ),
+        )
+      ),
+      "rounded-top":
+      map-merge(
+        map-get($utilities, "rounded-top"),
+        (
+          responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded-top"), "values"),
+            (
+              0: 0,
+              1: $border-radius-sm,
+              2: $border-radius,
+              3: $border-radius-lg,
+              4: $border-radius-xl, //edit
+              5: $border-radius-xxl, //edit
+              circle: 50%,
+              pill: $border-radius-pill
+            )
+          ),
+        )
+      ),
+      "rounded-end":
+      map-merge(
+        map-get($utilities, "rounded-end"),
+        (
+          responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded-end"), "values"),
+            (
+              0: 0,
+              1: $border-radius-sm,
+              2: $border-radius,
+              3: $border-radius-lg,
+              4: $border-radius-xl, //edit
+              5: $border-radius-xxl, //edit
+              circle: 50%,
+              pill: $border-radius-pill
+            )
+          ),
+        )
+      ),
+      "rounded-bottom":
+      map-merge(
+        map-get($utilities, "rounded-bottom"),
+        (
+          responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded-bottom"), "values"),
+            (
+              0: 0,
+              1: $border-radius-sm,
+              2: $border-radius,
+              3: $border-radius-lg,
+              4: $border-radius-xl, //edit
+              5: $border-radius-xxl, //edit
+              circle: 50%,
+              pill: $border-radius-pill
+            )
+          ),
+        )
+      ),
+      "rounded-start":
+      map-merge(
+        map-get($utilities, "rounded-start"),
+        (
+          responsive: true,
+          values:
+          map-merge(
+            map-get(map-get($utilities, "rounded-start"), "values"),
+            (
+              0: 0,
+              1: $border-radius-sm,
+              2: $border-radius,
+              3: $border-radius-lg,
+              4: $border-radius-xl, //edit
+              5: $border-radius-xxl, //edit
+              circle: 50%,
+              pill: $border-radius-pill
+            )
+          ),
         )
       ),
   )
