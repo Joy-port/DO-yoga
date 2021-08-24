@@ -249,6 +249,13 @@ $utilities: map-merge(
   }
 }
 
+.img-s-m-2{
+  height: 218px;
+  @include media-breakpoint-up(md) {
+    height: 341px;
+  }
+}
+
 .img-square-s-m {
   height: 165px;
   @include media-breakpoint-up(md) {
