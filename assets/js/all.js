@@ -38,52 +38,63 @@ $(function () {
 //only auto play
 
 
-var swiper = new Swiper(".swiper-auto-play", {
+var swiperAutoPlay = new Swiper(".swiper-auto-play", {
   spaceBetween: 30,
-  centeredSlides: false,
+  slidesPerView: 4.5,
+  //一次顯示數量
+  slidesPerGroup: 2,
+  //滑動數量
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false
   },
   breakpoints: {
-    576: {
-      slidesPerView: 1
+    //由pc 轉為 mobile
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 2
     },
     768: {
-      slidesPerView: 3
-    },
-    992: {
-      slidesPerView: 4.5
+      slidesPerView: 1,
+      slidesPerGroup: 1
     }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
 }); //change + per column + row per group  //need to replace cdn to
 //<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 //<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
 
-var swiper = new Swiper(".swiper-per-column", {
+var swiperPerColumn = new Swiper(".swiper-per-column", {
   slidesPerView: 2.5,
   //一次顯示數量
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
   //滑動數量
   slidesPerColumn: 2,
+  //一欄顯示多少行內容
   spaceBetween: 30,
+  slidesPerColumnFill: 'row',
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
   breakpoints: {
     992: {
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       slidesPerView: 2,
-      slidesPerColumn: 2,
-      slidesPerColumnFill: 'row'
+      slidesPerColumn: 2
     },
     768: {
       slidesPerGroup: 3,
       slidesPerView: 1,
-      slidesPerColumn: 3,
-      slidesPerColumnFill: 'row'
+      slidesPerColumn: 3
     }
   },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
 });
 //# sourceMappingURL=all.js.map
