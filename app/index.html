@@ -3,7 +3,6 @@ title: Doyoga
 layout: ./app/layout.ejs
 engine: ejs
 current: index
-terms: d-none
 ---
 <!-- banner -->
 <section>
@@ -40,7 +39,7 @@ terms: d-none
     <ul class="row">
       <li class="col-md-4 mb-5 mb-md-0" style="height: 420px">
         <div
-          class="card rounded-16 bg-img h-100"
+          class="card border-0 rounded-5 bg-img h-100"
           style="
             background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1593810450967-f9c42742e326.jpeg?raw=true);
           "
@@ -55,7 +54,7 @@ terms: d-none
       </li>
       <li class="col-md-4 mb-5 mb-md-0" style="height: 420px">
         <div
-          class="card rounded-16 bg-img h-100"
+          class="card border-0 rounded-5 bg-img h-100"
           style="
             background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1593810451137-5dc55105dace.jpeg?raw=true);
           "
@@ -70,7 +69,7 @@ terms: d-none
       </li>
       <li class="col-md-4" style="height: 420px">
         <div
-          class="card rounded-16 bg-img h-100"
+          class="card border-0 rounded-5 bg-img h-100"
           style="
             background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1599901860904-17e6ed7083a0.jpeg?raw=true);
           "
@@ -98,7 +97,7 @@ terms: d-none
             d-none d-lg-block
             |
             border-0
-            rounded-16
+            rounded-5
             bg-img bg-img-bottom
           "
           style="
@@ -217,25 +216,25 @@ terms: d-none
               card-img
               border-0
               rounded-16
-              img-square-s-m
+              img-square-s-m-l
               mb-5 mb-md-7 mb-lg-0
             "
           />
           <img
             src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true"
             alt="yoga img"
-            class="card-img border-0 rounded-16 img-square-s-m d-lg-none"
+            class="card-img border-0 rounded-16 img-square-s-m-l d-lg-none"
           />
         </div>
         <div class="col-6 col-md-3 col-lg">
           <img
-            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true"
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg?raw=true"
             alt="yoga img"
             class="
               card-img
               border-0
               rounded-16
-              img-square-s-m
+              img-square-s-m-l
               mb-5 mb-md-7 mb-lg-0
               d-lg-none
             "
@@ -243,7 +242,7 @@ terms: d-none
           <img
             src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
             alt="yoga img"
-            class="card-img border-0 rounded-16 img-square-s-m"
+            class="card-img border-0 rounded-16 img-square-s-m-l"
           />
         </div>
       </div>
@@ -251,39 +250,55 @@ terms: d-none
   </div>
 </section>
 
-<!-- 課程方案 -->
+<!-- 課程方案選擇 -->
 <section>
   <div class="container-lg pt-10 pb-13 pt-md-12 pb-md-14 pb-lg-16">
     <div class="text-center">
       <h2 class="h4 mb-1">方案選擇</h2>
       <p class="h6 text-secondary mb-7">DOYOGA 可以帶給你...</p>
     </div>
+    <!-- 修改過排版方式 -->
     <ul class="row">
       <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0">
-        <div class="card border-1 rounded-16 card-m-s-m px-0">
-          <div class="row g-0 h-100">
-            <div class="col-md-6 col-lg-12 h-50 h-md-100 h-lg-50">
+        <div class="card border-1 rounded-5 px-0">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-12">
               <img
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true"
                 alt="yoga img"
-                class="card-img rounded-bottom-0 rounded-md-5 rounded-end-md-0 rounded-lg-5 rounded-bottom-lg-0 h-100"
+                class="
+                  card-img
+                  rounded-bottom-0
+                  rounded-md-5
+                  rounded-end-md-0
+                  rounded-lg-5
+                  rounded-bottom-lg-0
+                  h-243
+                "
               />
             </div>
-            <div class="col-md-6 col-lg-12 h-auto">
+            <div class="col-md-6 col-lg-12">
               <div
                 class="
                   card-body
                   text-center text-md-start
-                  my-md-auto
                   text-lg-center
+                  my-md-auto
                 "
               >
                 <p class="h6 mb-1">首次體驗</p>
                 <p class="h6 text-secondary mb-2">NT $450 / 次</p>
-                <p class="mb-12 text-start">
-                  分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
+                <p class="text-start mb-12 mb-md-7 mb-lg-12">
+                  分基礎、中級、高級可以選擇<br>初次至 DOYOGA 上課建議選擇此方案
                 </p>
-                <a href="" class="btn btn-secondary btn-lg w-100 link-white h6"
+                <a
+                  href="#"
+                  class="
+                    btn btn-secondary btn-lg
+                    h6 link-white
+                    stretched-link
+                    w-100
+                  "
                   >選擇課程</a
                 >
               </div>
@@ -292,30 +307,46 @@ terms: d-none
         </div>
       </li>
       <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0">
-        <div class="card border-1 rounded-16 card-m-s-m px-0">
-          <div class="row g-0 h-100">
-            <div class="col-md-6 col-lg-12 h-50 h-md-100 h-lg-50">
+        <div class="card border-1 rounded-5 px-0">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-12">
               <img
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true"
                 alt="yoga img"
-                class="card-img rounded-bottom-0 rounded-md-5 rounded-end-md-0 rounded-lg-5 rounded-bottom-lg-0 h-100"
+                class="
+                  card-img
+                  rounded-bottom-0
+                  rounded-md-5
+                  rounded-end-md-0
+                  rounded-lg-5
+                  rounded-bottom-lg-0
+                  h-243
+                "
               />
             </div>
-            <div class="col-md-6 col-lg-12 h-auto">
+            <div class="col-md-6 col-lg-12">
               <div
                 class="
                   card-body
                   text-center text-md-start
-                  my-md-auto
                   text-lg-center
+                  my-md-auto
                 "
               >
                 <p class="h6 mb-1">短期體驗</p>
                 <p class="h6 text-secondary mb-2">NT $1800 / 月</p>
-                <p class="mb-12 text-start">
-                  分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
+                <p class="text-start mb-12 mb-md-7 mb-lg-12">
+                  分基礎、中級、高級可以選擇<br>想試著培養瑜珈習慣者可以選擇此方案
                 </p>
-                <a href="" class="btn btn-secondary btn-lg w-100 link-white h6"
+                <a
+                  href="#"
+                  class="
+                    btn btn-secondary btn-lg
+                    w-100
+                    link-white
+                    h6
+                    stretched-link
+                  "
                   >選擇課程</a
                 >
               </div>
@@ -324,30 +355,46 @@ terms: d-none
         </div>
       </li>
       <li class="col-lg-4">
-        <div class="card border-1 rounded-16 card-m-s-m px-0">
-          <div class="row g-0 h-100">
-            <div class="col-md-6 col-lg-12 h-50 h-md-100 h-lg-50">
+        <div class="card border-1 rounded-5 px-0">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-12">
               <img
                 src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true"
                 alt="yoga img"
-                class="card-img rounded-bottom-0 rounded-md-5 rounded-end-md-0 rounded-lg-5 rounded-bottom-lg-0 h-100"
+                class="
+                  card-img
+                  rounded-bottom-0
+                  rounded-md-5
+                  rounded-end-md-0
+                  rounded-lg-5
+                  rounded-bottom-lg-0
+                  h-243
+                "
               />
             </div>
-            <div class="col-md-6 col-lg-12 h-auto">
+            <div class="col-md-6 col-lg-12">
               <div
                 class="
                   card-body
                   text-center text-md-start
-                  my-md-auto
                   text-lg-center
+                  my-md-auto
                 "
               >
                 <p class="h6 mb-1">長期體驗</p>
                 <p class="h6 text-secondary mb-2">NT $5600 / 季</p>
-                <p class="mb-12 text-start">
-                  分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
+                <p class="text-start mb-12 mb-md-7 mb-lg-12">
+                  分基礎、中級、高級可以選擇<br>有長期習慣做瑜伽者建議選擇此方案
                 </p>
-                <a href="" class="btn btn-secondary btn-lg w-100 link-white h6"
+                <a
+                  href="#"
+                  class="
+                    btn btn-secondary btn-lg
+                    w-100
+                    link-white
+                    h6
+                    stretched-link
+                  "
                   >選擇課程</a
                 >
               </div>

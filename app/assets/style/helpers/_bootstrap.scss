@@ -229,6 +229,8 @@ $utilities: map-merge(
   )
 );
 
+
+/* index.html */
 .img-s-m {
   height: 210px;
   @include media-breakpoint-up(md) {
@@ -256,7 +258,7 @@ $utilities: map-merge(
   }
 }
 
-.img-square-s-m {
+.img-square-s-m-l {
   height: 165px;
   @include media-breakpoint-up(md) {
     height: 150px;
@@ -266,12 +268,12 @@ $utilities: map-merge(
   }
 }
 
-.card-m-s-m {
-  height: 497px;
+
+/* img */
+.img-square-s-m{
+  height: 165px;
+
   @include media-breakpoint-up(md) {
-    height: 238px;
-  }
-  @include media-breakpoint-up(lg) {
-    height: 497px;
+    height: 418px;
   }
 }
