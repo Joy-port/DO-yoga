@@ -13,7 +13,8 @@ $(function() {
 })(document);
 
 //swiper
-var swiper = new Swiper(".swiper-js", {
+//only auto play
+var swiper = new Swiper(".swiper-auto-play", {
   spaceBetween: 30,
   centeredSlides: false,
   autoplay: {
@@ -33,4 +34,35 @@ var swiper = new Swiper(".swiper-js", {
     },
   },
 
+});
+
+//change + per column + row per group  //need to replace cdn to
+//<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+//<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+var swiper = new Swiper(".swiper-per-column", {
+  slidesPerView: 2.5,  //一次顯示數量
+  slidesPerGroup: 2,   //滑動數量
+  slidesPerColumn: 2,  
+  spaceBetween: 30,
+
+  breakpoints: {
+    992: {
+      slidesPerGroup: 2, 
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerColumnFill: 'row'
+      
+    },
+    768: {
+      slidesPerGroup: 3,
+      slidesPerView: 1,
+      slidesPerColumn: 3,
+      slidesPerColumnFill: 'row'
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
