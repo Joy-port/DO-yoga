@@ -34,5 +34,26 @@ $(function () {
   };
 
   s.parentNode.insertBefore(tk, s);
-})(document);
+})(document); //swiper
+
+
+var swiper = new Swiper(".swiper-js", {
+  spaceBetween: 30,
+  centeredSlides: false,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 4.5
+    }
+  }
+});
 //# sourceMappingURL=all.js.map

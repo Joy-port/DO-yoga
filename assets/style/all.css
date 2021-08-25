@@ -1,4 +1,20 @@
 /* index.html */
+.img-xs-s {
+  height: 196px;
+}
+
+@media (min-width: 768px) {
+  .img-xs-s {
+    height: 161px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-xs-s {
+    height: 196px;
+  }
+}
+
 .img-s-m {
   height: 210px;
 }
@@ -28,6 +44,22 @@
 @media (min-width: 992px) {
   .img-m-l {
     height: 444px;
+  }
+}
+
+.img-l-m-l {
+  height: 350px;
+}
+
+@media (min-width: 768px) {
+  .img-l-m-l {
+    height: 216px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-l-m-l {
+    height: 350px;
   }
 }
 
