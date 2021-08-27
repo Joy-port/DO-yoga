@@ -14,50 +14,6 @@
   }
 }
 
-.card-img {
-  object-fit: cover;
-  object-position: center;
-
-  &-bottom {
-    object-position: bottom;
-  }
-  &-top {
-    object-position: top;
-  }
-
-  &-badge{
-    position: absolute;
-    top: 0;
-    left: 1.5rem;
-    transform: translateY(-50%);
-  }
-  &-top-center{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-}
-.pb-80{
-  padding-bottom: 80px;
-}
-
-.mb-80 {
-  margin-bottom: 80px;
-}
-
-.h-196 {
-  height: 196px;
-}
-
-.h-243{
-  height: 243px;
-}
-
-.h-628{
-  height: 628px;
-}
-
 .max-w-920{
   max-width: 920px;
 }

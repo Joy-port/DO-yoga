@@ -1,8 +1,12 @@
 ---
 title: Doyoga - courses
-layout: ./app/reservation-layout.ejs
+layout: ./app/layout.ejs
 engine: ejs
 current: selection for courses reservation
+reservation: " "
+reservationStatus1: "bg-primary text-white"
+reservationStatus2: "bg-warning text-primary"
+reservationStatus3: "bg-warning text-primary"
 ---
 <section>
   <!-- 方案內容 -->
@@ -279,7 +283,7 @@ current: selection for courses reservation
 
 <section>
   <!-- 預約須知 -->
-  <div class="container-lg mb-80 mt-12 mt-md-10 <%- terms %>">
+  <div class="container-lg mb-17 mt-12 mt-md-10">
     <h3 class="mb-4 h4 text-center">預約須知</h3>
     <div class="row justify-content-center mb-2 mb-md-0">
       <ul class="col-md-8 col-lg-6 mb-lg-7">
