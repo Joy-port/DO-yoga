@@ -48,6 +48,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
@@ -152,8 +153,7 @@
         </li>
         <li class="mb-10">
           <p class="mb-4">2. 想改善的生活問題?</p>
-          <div class="row">
-            <div class="col-4 form-check">
+            <div class="form-check form-check-inline me-2 mb-2">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -164,7 +164,7 @@
                 肌耐力不足
               </label>
             </div>
-            <div class="col-4 form-check">
+            <div class="form-check form-check-inline me-2 mb-2">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -175,7 +175,7 @@
                 柔軟度不佳
               </label>
             </div>
-            <div class="col-4 form-check">
+            <div class="form-check form-check-inline mb-2">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -186,7 +186,7 @@
                 壓力大
               </label>
             </div>
-            <div class="col-4 form-check">
+            <div class="form-check form-check-inline me-2 mb-2">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -197,7 +197,7 @@
                 姿勢不正
               </label>
             </div>
-            <div class="col-4 form-check">
+            <div class="form-check form-check-inline me-2 mb-2">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -208,7 +208,7 @@
                 睡眠品質差
               </label>
             </div>
-            <div class="col-4 form-check">
+            <div class="form-check form-check-inline mb-2">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -219,7 +219,6 @@
                 注意力不足
               </label>
             </div>
-          </div>
         </li>
         <li class="mb-10">
           <p class="mb-4">3. 每週累積運動量約為多少？</p>
@@ -271,17 +270,12 @@
           </div>
         </li>
         <li class="mb-10">
-          <p class="mb-1">4. 上課預約報到日</p>
-          <p class="mb-2">
+          <label class="mb-1" for="reservationDate">4. 上課預約報到日
+            <p class="mb-2">
             若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
           </p>
-          <input
-            class="border-1 border-secondary rounded-4 text-secondary"
-            type="date"
-            value=""
-            id="informDate"
-          />
-          <label class="" for="informDate"></label>
+          </label>
+          <input type="text" placeholder="MM/DD/YYYY" id="reservationDate" class="form-control js-datepicker-date w-auto datepicker-input">
         </li>
         <li class="mb-10">
           <p class="mb-1">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
@@ -306,7 +300,7 @@
             </div>
             <div class="col-3 mb-4">
               <label for="sex" class="mb-2">性別</label>
-              <select class="form-select" aria-label="select gender">
+              <select class="form-select w-auto" aria-label="select gender">
                 <option selected>-</option>
                 <option value="男">男</option>
                 <option value="女">女</option>
