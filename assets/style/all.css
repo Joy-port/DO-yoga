@@ -7292,7 +7292,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 690px;
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
@@ -7302,14 +7302,14 @@ fieldset:disabled .btn {
     min-height: calc(100% - 3.5rem);
   }
   .modal-sm {
-    max-width: 300px;
+    max-width: 345px;
   }
 }
 
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
-    max-width: 800px;
+    max-width: 920px;
   }
 }
 
@@ -22514,10 +22514,6 @@ img {
 
 .bg-img-bottom {
   background-position: center bottom;
-}
-
-.max-w-920 {
-  max-width: 920px;
 }
 
 .card-img {
