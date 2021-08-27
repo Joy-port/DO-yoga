@@ -1143,14 +1143,14 @@ $accordion-button-color:                  $accordion-color !default;
 $accordion-button-bg:                     $accordion-bg !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
 $accordion-button-active-bg:              tint-color($component-active-bg, 90%) !default;
-$accordion-button-active-color:           shade-color($primary, 10%) !default;
+$accordion-button-active-color:           shade-color($primary, 50%) !default;
 
 $accordion-button-focus-border-color:     $input-focus-border-color !default;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
 
 $accordion-icon-width:                    1.25rem !default;
-$accordion-icon-color:                    $accordion-color !default;
-$accordion-icon-active-color:             $accordion-button-active-color !default;
+$accordion-icon-color:                    $white !default; //edit
+$accordion-icon-active-color:             shade-color($white, 10%) !default; //edit
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
 

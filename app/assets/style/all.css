@@ -5855,7 +5855,7 @@ fieldset:disabled .btn {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #907A7B;
+  color: #fff;
   text-align: left;
   background-color: #fff;
   border: 0;
@@ -20297,6 +20297,10 @@ img {
           transform: translate(-50%, -50%);
 }
 
+.pb-80 {
+  padding-bottom: 80px;
+}
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -20307,6 +20311,10 @@ img {
 
 .h-243 {
   height: 243px;
+}
+
+.h-628 {
+  height: 628px;
 }
 
 .max-w-920 {
