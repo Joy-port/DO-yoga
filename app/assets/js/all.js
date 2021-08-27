@@ -72,3 +72,37 @@ var swiperPerColumn = new Swiper(".swiper-per-column", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//swiper vertical to horisonal
+var swiperAutoPlay = new Swiper(".swiper-test", {
+  spaceBetween: 30,  
+  slidesPerView: 3,  //一次顯示數量
+  slidesPerGroup: 1,   //滑動數量
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
+  breakpoints: {  //由pc 轉為 mobile
+    992: {
+      slidesPerView: 2.1,  //一次顯示數量 
+    },
+    768: {
+      slidesPerView: 1,  //一次顯示數量
+    },
+  },
+
+  direction: getDirection(),
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
+});
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 767 ? 'vertical' : 'horizontal';
+
+  return direction;
+}
