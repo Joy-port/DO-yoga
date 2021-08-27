@@ -73,22 +73,6 @@
   }
 }
 
-.img-square-s-m-l {
-  height: 165px;
-}
-
-@media (min-width: 768px) {
-  .img-square-s-m-l {
-    height: 150px;
-  }
-}
-
-@media (min-width: 992px) {
-  .img-square-s-m-l {
-    height: 445px;
-  }
-}
-
 /* img */
 .img-square-s-m {
   height: 165px;
