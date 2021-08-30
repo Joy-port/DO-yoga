@@ -13,3 +13,9 @@
     background-position: center bottom;
   }
 }
+
+.link-primary{
+  &:hover{
+    color: #C0A4A5;
+  }
+}
