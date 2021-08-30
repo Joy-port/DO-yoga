@@ -22500,6 +22500,28 @@ img {
   background-position: center bottom;
 }
 
+.link-primary:hover {
+  color: #C0A4A5;
+}
+
+.btn-outline-primary:hover {
+  color: #F5F0E7;
+}
+
+.btn-primary:hover {
+  background: #907A7B;
+  color: #F5F0E7;
+}
+
+.btn-secondary:hover {
+  background-color: #907A7B;
+}
+
+.btn-warning:hover {
+  background-color: #C0A4A5;
+  color: #F5F0E7;
+}
+
 .card-img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -22533,6 +22555,31 @@ img {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+/* width */
+.scrollbar {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.scrollbar ::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.scrollbar ::-webkit-scrollbar-track {
+  background: #c0a4a5;
+}
+
+.scrollbar ::-webkit-scrollbar-thumb {
+  background: #907a7b;
+  border-radius: 1rem;
+}
+
+.scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: #f5f0e7;
 }
 
 /*# sourceMappingURL=all.css.map */

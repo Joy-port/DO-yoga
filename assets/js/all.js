@@ -66,6 +66,7 @@ var swiperAutoPlay = new Swiper(".swiper-auto-play", {
 }); //change + per column + row per group  //need to replace cdn to
 //<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 //<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+//swiper for index.html
 
 var swiperPerColumn = new Swiper(".swiper-per-column", {
   slidesPerView: 2.5,
@@ -96,14 +97,16 @@ var swiperPerColumn = new Swiper(".swiper-per-column", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
-}); //swiper vertical to horisonal
+}); //swiper for course.html
 
-var swiperAutoPlay = new Swiper(".swiper-test", {
+var swiperAutoPlay2 = new Swiper(".swiper-teacher", {
   spaceBetween: 30,
-  slidesPerView: 3,
+  slidesPerView: 3.1,
   //一次顯示數量
   slidesPerGroup: 1,
   //滑動數量
+  centeredSlides: true,
+  loop: true,
   autoplay: {
     delay: 3000,
     disableOnInteraction: true
@@ -131,5 +134,8 @@ function getDirection() {
   var windowWidth = window.innerWidth;
   var direction = window.innerWidth <= 767 ? 'vertical' : 'horizontal';
   return direction;
-}
+} //datepicker
+
+
+$(".datepicker").datepicker();
 //# sourceMappingURL=all.js.map
