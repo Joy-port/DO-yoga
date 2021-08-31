@@ -105,35 +105,32 @@ function getDirection() {
   return direction;
 }
 
-//swiper reservation course choices
-var swiperNormal = new Swiper(".swiper-normal", {
-  spaceBetween: 30,  
-  slidesPerView: 3, 
 
-  breakpoints: { 
+var swiperCourse = new Swiper(".swiper-course", {
+  spaceBetween: 30,  
+  slidesPerView: 3,  //一次顯示數量
+  slidesPerGroup: 1,   //滑動數量
+
+  breakpoints: {  //由pc 轉為 mobile
     992: {
       slidesPerView: 3,
+
     },
     768: {
-      slidesPerView: 2,
-      slidesPerGroup: 1, 
-    },
-    576: {
-      spaceBetween: 0,  
-      slidesPerGroup: 3,
       slidesPerView: 1,
-      slidesPerColumn: 3,
-      
+
     },
+   
     
   },
 
 });
 
 
+
 //choose courses
 $(function() {
-  $('.reservation-choose .stretched-link').click(function(){
+  $('.reservation-choose .stretched-link').on('click', function() {
   //aria-expanded
   let isExpanded = $(this).attr('aria-expanded');
   //console.log(isExpanded);
@@ -148,26 +145,56 @@ $(function() {
   }
     $('.reservation-choose .stretched-link').addClass('disabled');
     $(this).removeClass('disabled');
-    $(this).parent().parent().parent().parent().addClass('border-4').addClass('border-primary').show();
+    $(this).parent().parent().parent().parent().addClass('border-4').addClass('border-secondary').show();
   }else{
-    $('.reservation-choose .card').removeClass('border-4').removeClass('border-primary');
+    $('.reservation-choose .card').removeClass('border-4').removeClass('border-secondary');
     $('.choose').addClass('d-none');
     $('.reservation-choose .stretched-link').removeClass('disabled');
     $('.reservation-choose .card').removeClass('border-4').removeClass('border-info').show();
   }
 });
 
-//collapse-plan
-$('.course-swiper-js .card').click(function(){
-  //remove all active
-  $('.card').removeClass('border-4').removeClass('border-white');
-  $('.check').addClass('opacity-5');
 
-  $(this).addClass('border-4').addClass('border-white');
-  $('.check', this).removeClass('opacity-5');
+//切換文字效果
+$('.course-pick').on('click', function() {
+  const courseType = $(this).attr('data-tag'); //getAttribute
+  const courseChosen = $(this).attr('data-card');
+
+    //切換選擇項目
+    $('.card').removeClass('border-4').removeClass('border-white');
+    $('.check').addClass('opacity-5');
+
+    if(courseType == 'first'){
+      $('#card1').addClass('border-4').addClass('border-white');
+      $('#card1 .check').removeClass('opacity-5');
+    }else if(courseType == 'short'){
+      $('#card2').addClass('border-4').addClass('border-white');
+      $('#card2 .check').removeClass('opacity-5');
+    }else if(courseType == 'long'){
+      $('#card3').addClass('border-4').addClass('border-white');
+      $('#card3 .check').removeClass('opacity-5');
+    }
+    $('.card', this).addClass('border-4').addClass('border-white');
+    $('.check', this).removeClass('opacity-5');
+  
+  //切換標題名稱 
+  $('.course-name').removeClass('.d-block').addClass('d-none');
+  //console.log(courseType);
+  if(courseType == 'first' || courseChosen == 'first'){
+    $('#text1').removeClass('d-none').addClass('d-block');
+  }else if(courseType == 'short' || courseChosen == 'short'){
+    $('#text2').removeClass('d-none').addClass('d-block');
+  }else if(courseType == 'long' || courseChosen == 'long'){
+    $('#text3').removeClass('d-none').addClass('d-block');
+  }
+  render();
+
+})
+
+
+
 });
 
-});
 //datepicker
 
-$( ".datepicker" ).datepicker();
+//$( ".datepicker" ).datepicker();
