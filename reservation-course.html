@@ -124,9 +124,8 @@
     <section>
   <!-- 方案內容 -->
   <div class="container-lg pb-13">
-    <!-- 修改過排版方式 -->
-    <ul class="row">
-      <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0">
+    <ul class="row | reservation-choose">
+      <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0 | course-pick" data-tag="first">
         <div class="card border-1 rounded-5 px-0">
           <div class="row g-0">
             <div class="col-md-6 col-lg-12">
@@ -167,9 +166,9 @@
                     w-100
                   "
                   data-bs-toggle="collapse"
-                  data-bs-target="#courseChoiceCollapse"
+                  data-bs-target=".courseChoiceCollapse"
                   aria-expanded="false"
-                  aria-controls="courseChoiceCollapsePC firstTryPackage"
+                  aria-controls="courseChoiceCollapse"
                   >選擇課程</a
                 >
               </div>
@@ -177,7 +176,7 @@
           </div>
         </div>
       </li>
-      <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0">
+      <li class="col-lg-4 mb-5 mb-md-7 mb-lg-0 | course-pick" data-tag="short">
         <div class="card border-1 rounded-5 px-0">
           <div class="row g-0">
             <div class="col-md-6 col-lg-12">
@@ -218,9 +217,9 @@
                     stretched-link
                   "
                   data-bs-toggle="collapse"
-                  data-bs-target="#courseChoiceCollapse"
+                  data-bs-target=".courseChoiceCollapse"
                   aria-expanded="false"
-                  aria-controls="courseChoiceCollapse intermediateProgramm"
+                  aria-controls="courseChoiceCollapse"
                   >選擇課程</a
                 >
               </div>
@@ -228,7 +227,7 @@
           </div>
         </div>
       </li>
-      <li class="col-lg-4">
+      <li class="col-lg-4 | course-pick" data-tag="long">
         <div class="card border-1 rounded-5 px-0">
           <div class="row g-0">
             <div class="col-md-6 col-lg-12">
@@ -269,9 +268,9 @@
                     stretched-link
                   "
                   data-bs-toggle="collapse"
-                  data-bs-target="#courseChoiceCollapse"
+                  data-bs-target=".courseChoiceCollapse"
                   aria-expanded="false"
-                  aria-controls="courseChoiceCollapse advancedProgramm"
+                  aria-controls="courseChoiceCollapse"
                   >選擇課程</a
                 >
               </div>
@@ -283,19 +282,21 @@
   </div>
 
   <!-- 選擇方案 collapse -->
-  <div class="collapse" id="courseChoiceCollapse">
+  <div class="collapse courseChoiceCollapse">
     <div class="text-center my-4">
       <span class="material-icons-outlined text-primary fs-1">
         arrow_drop_down
       </span>
     </div>
 
+    <!-- swiper 修改版本 -->
     <div class="bg-primary pt-10 pb-12">
       <div class="container-lg">
         <h3 class="h4 text-white text-center mb-7">選擇課程階級</h3>
-        <ul class="row">
-          <li class="col-lg-4 mb-7 mb-lg-0" id="firstTryPackage">
-            <div class="card bg-secondary border-white border-4">
+        <div class="swiper-course course-swiper-js">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide h-auto mb-7 mb-lg-0 | course-pick" data-card="first">
+            <div class="card bg-secondary h-100 border-white border-4" id="card1">
               <div
                 class="
                   card-header
@@ -308,7 +309,7 @@
                 "
               >
                 <h4 class="card-title h4 text-white">基礎 Basic</h4>
-                <i class="far fa-check-circle text-white h2"></i>
+                <i class="check far fa-check-circle text-white h2"></i>
               </div>
               <div class="card-body">
                 <p class="text-white mb-4">
@@ -323,8 +324,8 @@
             </div>
           </li>
 
-          <li class="col-lg-4 mb-7 mb-lg-0" id="intermediateProgramm">
-            <div class="card bg-secondary">
+          <li class="swiper-slide h-auto mb-7 mb-lg-0 | course-pick" data-card="short">
+            <div class="card bg-secondary h-100" id="card2">
               <div
                 class="
                   card-header
@@ -337,7 +338,7 @@
                 "
               >
                 <h4 class="card-title h4 text-white">中階 Intermediate</h4>
-                <i class="far fa-check-circle text-white h2 opacity-5"></i>
+                <i class="check far fa-check-circle text-white h2 opacity-5"></i>
               </div>
               <div class="card-body">
                 <p class="text-white mb-4">
@@ -353,8 +354,8 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-4 mb-7 mb-lg-0" id="advancedProgramm">
-            <div class="card bg-secondary">
+          <li class="swiper-slide h-auto mb-7 mb-lg-0 | course-pick" data-card="long">
+            <div class="card bg-secondary h-100" id="card3"> 
               <div
                 class="
                   card-header
@@ -367,7 +368,7 @@
                 "
               >
                 <h4 class="card-title h4 text-white">高階 Advanced</h4>
-                <i class="far fa-check-circle text-white h2 opacity-5"></i>
+                <i class="check far fa-check-circle text-white h2 opacity-5"></i>
               </div>
               <div class="card-body">
                 <p class="text-white mb-4">
@@ -385,11 +386,14 @@
           </li>
         </ul>
       </div>
+      </div>
     </div>
 
-    <div class="comtainer-lg pt-10 text-center" id="firstTryPackage">
-      <p class="text-secondary">你選擇的是</p>
-      <p class="h6 text-secondary mb-7">首次體驗課程-基礎</p>
+    <div class="comtainer-lg pt-10 text-center | choose">
+      <p class="mb-1">你選擇的是</p>
+      <p class="h6 mb-7 course-name d-none" id="text1">首次體驗課程-基礎</p>
+      <p class="h6 mb-7 course-name d-none" id="text2">首次體驗課程-短期</p>
+      <p class="h6 mb-7 course-name d-none" id="text3">首次體驗課程-長期</p>
     </div>
   </div>
 </section>
@@ -415,7 +419,7 @@
         </li>
       </ul>
       <div class="col-12 col-md-8 text-center">
-        <a href="reservation-form.html" class="btn btn-secondary h6 btn-lg rounded-4 link-white"
+        <a href="reservation-form.html" class="btn btn-secondary h6 btn-lg w-80 rounded-4 link-white collapse courseChoiceCollapse"
           >繼續預約</a
         >
       </div>
