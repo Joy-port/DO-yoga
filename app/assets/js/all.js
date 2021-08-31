@@ -1,7 +1,3 @@
-$(function() {
-  console.log('Hello Bootstrap5');
-});
-
 //adobe font Source Han Sans
 (function(d) {
   var config = {
@@ -109,6 +105,69 @@ function getDirection() {
   return direction;
 }
 
+//swiper reservation course choices
+var swiperNormal = new Swiper(".swiper-normal", {
+  spaceBetween: 30,  
+  slidesPerView: 3, 
+
+  breakpoints: { 
+    992: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 1, 
+    },
+    576: {
+      spaceBetween: 0,  
+      slidesPerGroup: 3,
+      slidesPerView: 1,
+      slidesPerColumn: 3,
+      
+    },
+    
+  },
+
+});
+
+
+//choose courses
+$(function() {
+  $('.reservation-choose .stretched-link').click(function(){
+  //aria-expanded
+  let isExpanded = $(this).attr('aria-expanded');
+  //console.log(isExpanded);
+  let browseWidth = window.innerWidth;
+
+  if(isExpanded === 'true'){ //展開
+    //border-4 border-info
+    //手機版適合 需要調整
+    //$('.reservation-choose .card').removeClass('border-3').removeClass('border-secondary').hide(); 
+    if(browseWidth <= 768){
+    $('.reservation-choose .card').hide();
+  }
+    $('.reservation-choose .stretched-link').addClass('disabled');
+    $(this).removeClass('disabled');
+    $(this).parent().parent().parent().parent().addClass('border-4').addClass('border-primary').show();
+  }else{
+    $('.reservation-choose .card').removeClass('border-4').removeClass('border-primary');
+    $('.choose').addClass('d-none');
+    $('.reservation-choose .stretched-link').removeClass('disabled');
+    $('.reservation-choose .card').removeClass('border-4').removeClass('border-info').show();
+  }
+});
+
+//collapse-plan
+$('.course-swiper-js .card').click(function(){
+  //remove all active
+  $('.card').removeClass('border-4').removeClass('border-white');
+  $('.check').addClass('opacity-5');
+
+  $(this).addClass('border-4').addClass('border-white');
+  $('.check', this).removeClass('opacity-5');
+});
+
+});
 //datepicker
 
 $( ".datepicker" ).datepicker();
