@@ -1,6 +1,5 @@
 
 //choose courses
-$(function() {
     $('.reservation-choose .stretched-link').on('click', function() {
     //aria-expanded
     let isExpanded = $(this).attr('aria-expanded');
@@ -31,24 +30,24 @@ $(function() {
     const courseType = $(this).attr('data-tag'); //getAttribute
     const courseChosen = $(this).attr('data-card');
       //切換選擇項目
-      $('.card').removeClass('border-4').removeClass('border-white');
-      $('.check').addClass('opacity-5');
+      $('.swiper-slide .card').removeClass('border-4').removeClass('border-white');
+      $('.swiper-slide .check').addClass('opacity-5');
   
-      if(courseType == 'first'){
+      if(courseType == 'first' || courseChosen == 'first'){
         $('#card1').addClass('border-4').addClass('border-white');
         $('#card1 .check').removeClass('opacity-5');
-      }else if(courseType == 'short'){
+        
+      }else if(courseType == 'short' || courseChosen == 'short'){
         $('#card2').addClass('border-4').addClass('border-white');
         $('#card2 .check').removeClass('opacity-5');
-      }else if(courseType == 'long'){
+        
+      }else if(courseType == 'long' || courseChosen == 'long'){
         $('#card3').addClass('border-4').addClass('border-white');
         $('#card3 .check').removeClass('opacity-5');
+        
       }
-      //QQ 
-      $('.card', this).addClass('border-4').addClass('border-white');
-      $('.check', this).removeClass('opacity-5');
   
-    
+  
     //切換標題名稱 
     $('.course-name').removeClass('.d-block').addClass('d-none');
     //console.log(courseType);
@@ -62,6 +61,3 @@ $(function() {
     render();
   
   })
-  
-  
-  });
