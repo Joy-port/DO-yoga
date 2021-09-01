@@ -94,6 +94,32 @@ var swiperPerColumn = new Swiper(".swiper-per-column", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
+}); //QQ 超怪的 如果不改變視窗大小，會跑版，但是改了之後又沒事了
+
+var swiperCourse = new Swiper(".swiper-course", {
+  spaceBetween: 30,
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  breakpoints: {
+    //由pc 轉為 mobile
+    992: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 2.1 //一次顯示數量 
+
+    },
+    576: {
+      slidesPerView: 1.5 //一次顯示數量
+
+    },
+    414: {
+      slidesPerView: 1,
+      //一次顯示數量
+      slidesPerColumn: 3,
+      spaceBetween: 5
+    }
+  }
 }); //swiper for course.html
 
 var swiperAutoPlay2 = new Swiper(".swiper-teacher", {
@@ -133,24 +159,8 @@ function getDirection() {
   return direction;
 }
 
-var swiperCourse = new Swiper(".swiper-course", {
-  spaceBetween: 30,
-  slidesPerView: 3,
-  //一次顯示數量
-  slidesPerGroup: 1,
-  //滑動數量
-  breakpoints: {
-    //由pc 轉為 mobile
-    992: {
-      slidesPerView: 3
-    },
-    768: {
-      slidesPerView: 1
-    }
-  }
-}); //choose courses
-
 $(function () {
+  //choose courses
   $('.reservation-choose .stretched-link').on('click', function () {
     //aria-expanded
     var isExpanded = $(this).attr('aria-expanded'); //console.log(isExpanded);
@@ -173,7 +183,7 @@ $(function () {
       $('.reservation-choose .card').removeClass('border-4').removeClass('border-secondary');
       $('.choose').addClass('d-none');
       $('.reservation-choose .stretched-link').removeClass('disabled');
-      $('.reservation-choose .card').removeClass('border-4').removeClass('border-info').show();
+      $('.reservation-choose .card').removeClass('border-4').removeClass('border-secondary').show();
     }
   }); //切換文字效果
 
@@ -182,22 +192,20 @@ $(function () {
 
     var courseChosen = $(this).attr('data-card'); //切換選擇項目
 
-    $('.card').removeClass('border-4').removeClass('border-white');
-    $('.check').addClass('opacity-5');
+    $('.swiper-slide .card').removeClass('border-4').removeClass('border-white');
+    $('.swiper-slide .check').addClass('opacity-5');
 
-    if (courseType == 'first') {
+    if (courseType == 'first' || courseChosen == 'first') {
       $('#card1').addClass('border-4').addClass('border-white');
       $('#card1 .check').removeClass('opacity-5');
-    } else if (courseType == 'short') {
+    } else if (courseType == 'short' || courseChosen == 'short') {
       $('#card2').addClass('border-4').addClass('border-white');
       $('#card2 .check').removeClass('opacity-5');
-    } else if (courseType == 'long') {
+    } else if (courseType == 'long' || courseChosen == 'long') {
       $('#card3').addClass('border-4').addClass('border-white');
       $('#card3 .check').removeClass('opacity-5');
-    }
+    } //切換標題名稱 
 
-    $('.card', this).addClass('border-4').addClass('border-white');
-    $('.check', this).removeClass('opacity-5'); //切換標題名稱 
 
     $('.course-name').removeClass('.d-block').addClass('d-none'); //console.log(courseType);
 
@@ -208,9 +216,7 @@ $(function () {
     } else if (courseType == 'long' || courseChosen == 'long') {
       $('#text3').removeClass('d-none').addClass('d-block');
     }
-
-    render();
   });
-}); //datepicker
-//$( ".datepicker" ).datepicker();
+});
+"use strict";
 //# sourceMappingURL=all.js.map
