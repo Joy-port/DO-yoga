@@ -36,24 +36,41 @@
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css">
+
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
+   <!-- loader -->
+   <div class="loader line-spin-fade-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0">
       <div class="container-fluid py-6">
         <a class="navbar-brand" href="index.html">
@@ -123,11 +140,12 @@
 
     
 <!-- 填寫表單 -->
+<main>
 <section>
   <div class="container-lg pb-17 mb-md-7">
-    <p class="text-center mb-7">
-      你選擇的是 <span class="h6 text-secondary"> 首次體驗課程-基礎</span>
-    </p>
+    <h2 class="fs-7 text-center mb-7">
+      你選擇的是 <span class="fs-6 fw-md text-secondary"> 首次體驗課程-基礎</span>
+    </h2>
     <form class="row justify-content-center">
       <ul class="col-md-4">
         <li class="mb-10">
@@ -275,7 +293,7 @@
             若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
           </p>
           </label>
-          <input type="text" placeholder="MM/DD/YYYY" id="reservationDate" class="form-control js-datepicker-date w-auto datepicker-input">
+          <input type="text" placeholder="MM/DD/YYYY" id="reservationDate" class="form-control datepicker-date w-auto">
         </li>
         <li class="mb-10">
           <p class="mb-1">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
@@ -339,6 +357,7 @@
     </form>
   </div>
 </section>
+</main>
 
     <footer class="bg-primary">
       <!-- subscribe -->
@@ -445,6 +464,10 @@
     </ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

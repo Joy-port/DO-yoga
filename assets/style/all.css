@@ -22504,6 +22504,17 @@ img {
   color: #C0A4A5;
 }
 
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10 !important;
+}
+
+.loader > div {
+  background-color: #907A7B;
+}
+
 .btn-outline-primary:hover {
   color: #F5F0E7;
 }

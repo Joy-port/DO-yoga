@@ -36,24 +36,41 @@
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css">
+
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
+   <!-- loader -->
+   <div class="loader line-spin-fade-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0">
       <div class="container-fluid py-6">
         <a class="navbar-brand" href="index.html">
@@ -121,7 +138,7 @@
     </div>
 </nav>
 
-    
+    <main>
 <section>
     <div class="container-lg pt-13 pb-14 py-md-16">
         <h2 class="h5 mb-7 text-center">聯絡我們</h2>
@@ -130,7 +147,7 @@
                 <iframe class="w-100 border-0 mb-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115666.61479077699!2d121.46775978554331!3d25.048265552225693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a98b83418d69%3A0xceb20b414ca9e822!2smystery%20yoga!5e0!3m2!1szh-TW!2stw!4v1629896643151!5m2!1szh-TW!2stw" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 
                 <address>
-                <h2 class="h5 mb-2">DOYOGA 教室位置</h2>
+                <h3 class="h5 mb-2">DOYOGA 教室位置</h3>
                 <a href="https://goo.gl/maps/veQYBuiwWvJ9kiyf8" class="d-block link-primary mb-2 mb-md-10">高雄市苓雅區北信街23號2樓</a>
                 <p>如何前往：</p>
                 <ul>
@@ -145,8 +162,9 @@
 
             </div>
             <div class="col-md-10 col-lg-5">
-                <form action="" class="bg-warning border-0 rounded-5 p-10">
+                <form class="bg-warning border-0 rounded-5 p-10">
                     <h3 class="h6 mb-4 mb-md-7">意見回饋&問題詢問</h3>
+                    <!-- 不確定表單的部分是否需要用ul li 還是單純div就好 -->
                     <ul>
                         <li class="mb-4">
                             <label for="customerName" class="form-label mb-2">姓名</label>
@@ -173,6 +191,7 @@
         </div>
     </div>
 </section>
+</main>
     <footer class="bg-primary">
       <!-- subscribe -->
       <div class="border-bottom border-white">
@@ -278,6 +297,10 @@
     </ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

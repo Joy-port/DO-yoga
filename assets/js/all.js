@@ -31,9 +31,14 @@
   };
 
   s.parentNode.insertBefore(tk, s);
-})(document); //swiper
-//only auto play
+})(document); //loader
+//loader 頁面載完就移出
 
+
+$(window).on("load", function () {
+  $(".loader").remove();
+}); //swiper
+//only auto play
 
 var swiperAutoPlay = new Swiper(".swiper-auto-play", {
   spaceBetween: 30,
@@ -48,10 +53,18 @@ var swiperAutoPlay = new Swiper(".swiper-auto-play", {
   breakpoints: {
     //由pc 轉為 mobile
     992: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       slidesPerGroup: 2
     },
     768: {
+      slidesPerView: 3,
+      slidesPerGroup: 1
+    },
+    576: {
+      slidesPerView: 2,
+      slidesPerGroup: 1
+    },
+    414: {
       slidesPerView: 1,
       slidesPerGroup: 1
     }
@@ -218,5 +231,15 @@ $(function () {
     }
   });
 });
+var dateDom = document.querySelector('.datepicker-date');
+
+if (dateDom) {
+  var datepicker = new Datepicker(dateDom, {
+    autoSize: true,
+    gotoCurrent: true,
+    daysOfWeekDisabled: [0],
+    buttonClass: 'btn btn-outline-primary border-0 fw-normal'
+  });
+}
 "use strict";
 //# sourceMappingURL=all.js.map
