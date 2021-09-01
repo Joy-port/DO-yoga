@@ -8,6 +8,12 @@
   h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 })(document);
 
+  //loader
+  //loader 頁面載完就移出
+  $(window).on("load", function() {
+    $(".loader").remove();
+  });
+
 //swiper
 //only auto play
 var swiperAutoPlay = new Swiper(".swiper-auto-play", {
@@ -20,10 +26,18 @@ var swiperAutoPlay = new Swiper(".swiper-auto-play", {
   },
   breakpoints: {  //由pc 轉為 mobile
     992: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       slidesPerGroup: 2, 
     },
     768: {
+      slidesPerView: 3,
+      slidesPerGroup: 1, 
+    },
+    576: {
+      slidesPerView: 2,
+      slidesPerGroup: 1, 
+    },
+    414: {
       slidesPerView: 1,
       slidesPerGroup: 1, 
     },
@@ -194,3 +208,16 @@ $(function() {
   })
   
   })
+
+
+  const dateDom = document.querySelector('.datepicker-date');
+  if (dateDom) {
+    const datepicker = new Datepicker(dateDom, {
+      autoSize: true,
+      gotoCurrent: true,
+      daysOfWeekDisabled: [0],
+      buttonClass: 'btn btn-outline-primary border-0 fw-normal',
+
+    });
+  }
+
