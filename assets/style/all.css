@@ -22504,17 +22504,6 @@ img {
   color: #C0A4A5;
 }
 
-.loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 10 !important;
-}
-
-.loader > div {
-  background-color: #907A7B;
-}
-
 .btn-outline-primary:hover {
   color: #F5F0E7;
 }
@@ -22531,6 +22520,22 @@ img {
 .btn-warning:hover {
   background-color: #C0A4A5;
   color: #F5F0E7;
+}
+
+.datepicker-cell.selected, .datepicker-cell.focused, .datepicker-cell.selected:hover {
+  color: white;
+  background-color: #907A7B !important;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10 !important;
+}
+
+.loader > div {
+  background-color: #907A7B;
 }
 
 .card-img {
