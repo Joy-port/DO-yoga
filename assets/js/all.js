@@ -241,5 +241,4 @@ if (dateDom) {
     buttonClass: 'btn btn-outline-primary border-0 fw-normal'
   });
 }
-"use strict";
 //# sourceMappingURL=all.js.map
