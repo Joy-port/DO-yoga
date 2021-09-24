@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Doyoga - courses</title>
+    <title>DOYOGA｜預約-填寫資料</title>
     <script>
       (function (d) {
         var config = {
@@ -87,7 +87,8 @@
       <div></div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0 position-sticky top-0 shadow-sm" style="z-index: 1000;" id="scroll-navbar-js">
       <div class="container-fluid py-6">
         <a class="navbar-brand" href="index.html">
           <img
@@ -148,7 +149,7 @@
     <nav class=" ">
       <div class="container-lg pt-16">
         <h2 class="h4 text-center mb-7 mb-md-4">立即預約</h2>
-        <ul class="row justify-content-center mb-10">
+        <ol class="row justify-content-center mb-10">
           <li class="col-4 col-md-2">
             <span
               class="
@@ -188,7 +189,7 @@
               >完成預約</span
             >
           </li>
-        </ul>
+        </ol>
       </div>
     </nav>
 
@@ -201,9 +202,9 @@
       你選擇的是 <span class="fs-6 fw-md text-secondary"> 首次體驗課程-基礎</span>
     </h2>
     <form class="row justify-content-center">
-      <ul class="col-md-4">
+      <ul class="col-md-6 col-xl-4 text-dark">
         <li class="mb-10">
-          <p class="mb-4">1. 是否接觸過瑜珈?</p>
+          <h3 class="fs-7 mb-4">1. 是否接觸過瑜珈?</h3>
           <div class="form-check form-check-inline me-10">
             <input
               class="form-check-input"
@@ -224,7 +225,7 @@
           </div>
         </li>
         <li class="mb-10">
-          <p class="mb-4">2. 想改善的生活問題?</p>
+          <h3 class="fs-7 mb-4">2. 想改善的生活問題?</h3>
             <div class="form-check form-check-inline me-2 mb-2">
               <input
                 class="form-check-input"
@@ -293,7 +294,7 @@
             </div>
         </li>
         <li class="mb-10">
-          <p class="mb-4">3. 每週累積運動量約為多少？</p>
+          <h3 class="fs-7 mb-4">3. 每週累積運動量約為多少？</h3>
           <div class="row gx-0">
             <div class="col-6 form-check">
               <input
@@ -342,15 +343,15 @@
           </div>
         </li>
         <li class="mb-10">
-          <label class="mb-1" for="reservationDate">4. 上課預約報到日
-            <p class="mb-2">
+          <label for="reservationDate"><h3 class="fs-7 mb-1">4. 上課預約報到日</h3>
+            <p class="fs-8 mb-2">
             若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
           </p>
           </label>
           <input type="text" placeholder="MM/DD/YYYY" id="reservationDate" class="form-control datepicker-date w-auto">
         </li>
         <li class="mb-10">
-          <p class="mb-1">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+          <h3 class="fs-7 mb-1">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</h3>
           <div class="row">
             <div class="col-6 mb-4">
               <label for="name" class="mb-2">姓名</label>
@@ -372,7 +373,7 @@
             </div>
             <div class="col-3 mb-4">
               <label for="sex" class="mb-2">性別</label>
-              <select class="form-select w-auto" aria-label="select gender">
+              <select class="form-select w-auto" aria-label="select gender" id="sex">
                 <option selected>-</option>
                 <option value="男">男</option>
                 <option value="女">女</option>
@@ -389,7 +390,7 @@
               />
             </div>
             <div class="col-12">
-              <label for="tel" class="mb-2">電子信箱</label>
+              <label for="tel" class="mb-2">手機號碼</label>
               <input
                 type="tel"
                 class="form-control"
@@ -503,20 +504,21 @@
         align-items-center
         me-4
         d-none      "
+      style="z-index: 1000;"
     >
       <li class="mb-2">
-        <a href="#" class="link-primary d-block">
-          <i class="fab fa-facebook fa-3x"></i>
+        <a href="#" class="link-primary d-block ">
+          <i class="fab fa-facebook fa-3x shadow-sm border-2 rounded-circle"></i>
         </a>
       </li>
       <li class="mb-2">
         <a href="#" class="link-primary d-block">
-          <i class="fab fa-instagram fa-3x"></i>
+          <i class="fab fa-instagram fa-3x shadow-sm border-2 rounded-5"></i>
         </a>
       </li>
       <li class="">
         <a href="#" class="link-primary d-block">
-          <i class="fab fa-line fa-3x"></i>
+          <i class="fab fa-line fa-3x shadow-sm border-2 rounded-5"></i>
         </a>
       </li>
     </ul>

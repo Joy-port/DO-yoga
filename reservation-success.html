@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Doyoga - courses</title>
+    <title>DOYOGA｜預約-完成預約</title>
     <script>
       (function (d) {
         var config = {
@@ -87,7 +87,8 @@
       <div></div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0 position-sticky top-0 shadow-sm" style="z-index: 1000;" id="scroll-navbar-js">
       <div class="container-fluid py-6">
         <a class="navbar-brand" href="index.html">
           <img
@@ -148,7 +149,7 @@
     <nav class=" ">
       <div class="container-lg pt-16">
         <h2 class="h4 text-center mb-7 mb-md-4">立即預約</h2>
-        <ul class="row justify-content-center mb-10">
+        <ol class="row justify-content-center mb-10">
           <li class="col-4 col-md-2">
             <span
               class="
@@ -188,7 +189,7 @@
               >完成預約</span
             >
           </li>
-        </ul>
+        </ol>
       </div>
     </nav>
 
@@ -202,7 +203,7 @@
           <p class="mb">已完成預約，以下是您的預約資訊:</p>
         </div>
       </div>
-      <div class="col-6 mb-7">
+      <div class="col-md-8 col-lg-6 mb-7">
         <div class="accordion" id="bookingInfoCheck">
           <div class="accordion-item rounded-4">
             <h2 class="accordion-header" id="bookingInfo">
@@ -242,7 +243,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4 text-center mb-2">
+      <div class="col-md-6 col-lg-4 text-center mb-2">
         <h3 class="h6 mb-2">上課注意事項</h3>
         <p class="mb-10 text-start">
           第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水
@@ -348,20 +349,21 @@
         align-items-center
         me-4
         d-none      "
+      style="z-index: 1000;"
     >
       <li class="mb-2">
-        <a href="#" class="link-primary d-block">
-          <i class="fab fa-facebook fa-3x"></i>
+        <a href="#" class="link-primary d-block ">
+          <i class="fab fa-facebook fa-3x shadow-sm border-2 rounded-circle"></i>
         </a>
       </li>
       <li class="mb-2">
         <a href="#" class="link-primary d-block">
-          <i class="fab fa-instagram fa-3x"></i>
+          <i class="fab fa-instagram fa-3x shadow-sm border-2 rounded-5"></i>
         </a>
       </li>
       <li class="">
         <a href="#" class="link-primary d-block">
-          <i class="fab fa-line fa-3x"></i>
+          <i class="fab fa-line fa-3x shadow-sm border-2 rounded-5"></i>
         </a>
       </li>
     </ul>

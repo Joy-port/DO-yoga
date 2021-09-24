@@ -37,7 +37,8 @@
 
 $(window).on("load", function () {
   $(".loader").remove();
-}); //swiper
+}); //mousescroll ->變成opacity .6 add class opacity-7
+//swiper
 //only auto play
 
 var swiperAutoPlay = new Swiper(".swiper-auto-play", {
