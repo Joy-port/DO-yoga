@@ -1,5 +1,5 @@
 ---
-title: Doyoga - courses
+title: DOYOGA｜課程介紹
 layout: ./app/layout.ejs
 engine: ejs
 current: courses
@@ -37,13 +37,14 @@ reservationStatus3: " "
         </div>
         <select class="form-select w-25 w-md-20" aria-label="Default select example">
             <option selected>全部課程</option>
-            <option value="1">基礎 Basic</option>
-            <option value="2">艾揚格 Iyengar</option>
-            <option value="3">哈達 Hatha</option>
-            <option value="4">雙人飛行 Arco Yoga</option>
-            <option value="5">阿斯坦加 Ashtanga</option>
-            <option value="6">陰陽 Yin Yang</option>
-            <option value="7">香氛 Aroma Yoga</option>
+            <option value="Basic">基礎 Basic</option>
+            <option value="Iyengar">艾揚格 Iyengar</option>
+            <option value="Hatha">哈達 Hatha</option>
+            <option value="Universal">寰宇 Universal</option>
+            <option value="ArcoYoga">雙人飛行 Arco Yoga</option>
+            <option value="Ashtanga">阿斯坦加 Ashtanga</option>
+            <option value="YinYang">陰陽 Yin Yang</option>
+            <option value="AromaYoga">香氛 Aroma Yoga</option>
         </select>
     </div>
     </div>
@@ -56,7 +57,7 @@ reservationStatus3: " "
         <div class="row">
             <div class="col-lg-9">
                 <ul class="row">
-                    <li class="col-md-7 mb-9">
+                    <li class="col-md-7 mb-9" data-course="Basic">
                         <div class="card border-0 h-196">
                             <!-- modal trigger -->
                             <a href="#" class="d-block h-100 stretched-link" data-bs-toggle="modal" data-bs-target="#courseDetailModal"><img class="card-img h-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg?raw=true" alt="yoga img"></a>
@@ -68,7 +69,7 @@ reservationStatus3: " "
                             <div class="card-img-overlay"><div class="card-img-badge | badge bg-secondary text-white rounded-pill fw-light py-1 px-4">60 min</div></div>
                         </div>
                     </li>
-                    <li class="col-md-5 mb-9">
+                    <li class="col-md-5 mb-9" data-course="Iyengar">
                         <div class="card border-0 h-196">
                             <a href="#" class="d-block h-100 stretched-link"><img class="card-img h-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg?raw=true" alt="yoga img"></a>
                             <div class="card-img-overlay | d-flex flex-column justify-content-end">
@@ -78,7 +79,7 @@ reservationStatus3: " "
                             <div class="card-img-overlay"><div class="card-img-badge | badge bg-secondary text-white rounded-pill fw-light py-1 px-4">60 min</div></div>
                         </div>
                     </li>
-                    <li class="col-md-5 mb-9">
+                    <li class="col-md-5 mb-9" data-course="Hatha">
                         <div class="card border-0 h-196">
                             <a href="#" class="d-block h-100 stretched-link"><img class="card-img h-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true" alt="yoga img"></a>
                             <div class="card-img-overlay | d-flex flex-column justify-content-end">
@@ -88,7 +89,7 @@ reservationStatus3: " "
                             <div class="card-img-overlay"><div class="card-img-badge | badge bg-secondary text-white rounded-pill fw-light py-1 px-4">60 min</div></div>
                         </div>
                     </li>
-                    <li class="col-md-7 mb-9">
+                    <li class="col-md-7 mb-9" data-course="Universal">
                         <div class="card border-0 h-196">
                             <a href="#" class="d-block h-100 stretched-link"><img class="card-img h-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" alt="yoga img"></a>
                             <div class="card-img-overlay | d-flex flex-column justify-content-end">
@@ -98,7 +99,7 @@ reservationStatus3: " "
                             <div class="card-img-overlay"><div class="card-img-badge | badge bg-secondary text-white rounded-pill fw-light py-1 px-4">60 min</div></div>
                         </div>
                     </li>
-                    <li class="col-md-7 mb-9">
+                    <li class="col-md-7 mb-9" data-course="ArcoYoga">
                         <div class="card border-0 h-196">
                             <a href="#" class="d-block h-100 stretched-link"><img class="card-img h-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/two%20woman%20dong%20fitness%20exercise.jpg?raw=true" alt="yoga img"></a>
                             <div class="card-img-overlay | d-flex flex-column justify-content-end">
@@ -108,7 +109,7 @@ reservationStatus3: " "
                             <div class="card-img-overlay"><div class="card-img-badge | badge bg-secondary text-white rounded-pill fw-light py-1 px-4">60 min</div></div>
                         </div>
                     </li>
-                    <li class="col-md-5 mb-9">
+                    <li class="col-md-5 mb-9" data-course="Ashtanga"> 
                         <div class="card border-0 h-196">
                             <a href="#" class="d-block h-100 stretched-link"><img class="card-img h-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga.jpg?raw=true" alt="yoga img"></a>
                             <div class="card-img-overlay | d-flex flex-column justify-content-end">
@@ -118,7 +119,7 @@ reservationStatus3: " "
                             <div class="card-img-overlay"><div class="card-img-badge | badge bg-secondary text-white rounded-pill fw-light py-1 px-4">60 min</div></div>
                         </div>
                     </li>
-                    <li class="col-md-5 mb-9">
+                    <li class="col-md-5 mb-9" data-course="YinYang">
                         <div class="card border-0 h-196">
                             <a href="#" class="d-block h-100 stretched-link"><img class="card-img h-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20pants%20bending%20her%20body%20by%20the%20window.jpg?raw=true" alt="yoga img"></a>
                             <div class="card-img-overlay | d-flex flex-column justify-content-end">
@@ -128,7 +129,7 @@ reservationStatus3: " "
                             <div class="card-img-overlay"><div class="card-img-badge | badge bg-secondary text-white rounded-pill fw-light py-1 px-4">60 min</div></div>
                         </div>
                     </li>
-                    <li class="col-md-7 mb-9">
+                    <li class="col-md-7 mb-9" data-course="AromaYoga">
                         <div class="card border-0 h-196">
                             <a href="#" class="d-block h-100 stretched-link"><img class="card-img h-100" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg?raw=true" alt="yoga img"></a>
                             <div class="card-img-overlay | d-flex flex-column justify-content-end">

@@ -1,5 +1,5 @@
 ---
-title: Doyoga - courses
+title: DOYOGA｜預約-填寫資料
 layout: ./app/layout.ejs
 engine: ejs
 current: form for reservation
@@ -18,9 +18,9 @@ reservationStatus3: "bg-warning text-primary"
       你選擇的是 <span class="fs-6 fw-md text-secondary"> 首次體驗課程-基礎</span>
     </h2>
     <form class="row justify-content-center">
-      <ul class="col-md-4">
+      <ul class="col-md-6 col-xl-4 text-dark">
         <li class="mb-10">
-          <p class="mb-4">1. 是否接觸過瑜珈?</p>
+          <h3 class="fs-7 mb-4">1. 是否接觸過瑜珈?</h3>
           <div class="form-check form-check-inline me-10">
             <input
               class="form-check-input"
@@ -41,7 +41,7 @@ reservationStatus3: "bg-warning text-primary"
           </div>
         </li>
         <li class="mb-10">
-          <p class="mb-4">2. 想改善的生活問題?</p>
+          <h3 class="fs-7 mb-4">2. 想改善的生活問題?</h3>
             <div class="form-check form-check-inline me-2 mb-2">
               <input
                 class="form-check-input"
@@ -110,7 +110,7 @@ reservationStatus3: "bg-warning text-primary"
             </div>
         </li>
         <li class="mb-10">
-          <p class="mb-4">3. 每週累積運動量約為多少？</p>
+          <h3 class="fs-7 mb-4">3. 每週累積運動量約為多少？</h3>
           <div class="row gx-0">
             <div class="col-6 form-check">
               <input
@@ -159,15 +159,15 @@ reservationStatus3: "bg-warning text-primary"
           </div>
         </li>
         <li class="mb-10">
-          <label class="mb-1" for="reservationDate">4. 上課預約報到日
-            <p class="mb-2">
+          <label for="reservationDate"><h3 class="fs-7 mb-1">4. 上課預約報到日</h3>
+            <p class="fs-8 mb-2">
             若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！
           </p>
           </label>
           <input type="text" placeholder="MM/DD/YYYY" id="reservationDate" class="form-control datepicker-date w-auto">
         </li>
         <li class="mb-10">
-          <p class="mb-1">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+          <h3 class="fs-7 mb-1">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</h3>
           <div class="row">
             <div class="col-6 mb-4">
               <label for="name" class="mb-2">姓名</label>
@@ -189,7 +189,7 @@ reservationStatus3: "bg-warning text-primary"
             </div>
             <div class="col-3 mb-4">
               <label for="sex" class="mb-2">性別</label>
-              <select class="form-select w-auto" aria-label="select gender">
+              <select class="form-select w-auto" aria-label="select gender" id="sex">
                 <option selected>-</option>
                 <option value="男">男</option>
                 <option value="女">女</option>
@@ -206,7 +206,7 @@ reservationStatus3: "bg-warning text-primary"
               />
             </div>
             <div class="col-12">
-              <label for="tel" class="mb-2">電子信箱</label>
+              <label for="tel" class="mb-2">手機號碼</label>
               <input
                 type="tel"
                 class="form-control"
