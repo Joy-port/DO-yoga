@@ -103,8 +103,8 @@ var swiper = new Swiper(".swiper-auto-play", {
     }
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".sp-btn-next",
+    prevEl: ".sp-btn-prev"
   }
 }); //swiper for recommend section
 
