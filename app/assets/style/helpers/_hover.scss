@@ -1,24 +1,24 @@
 .btn-outline-primary{
-    &:hover{
+    &:hover, :focus{
         color: #F5F0E7;
     }
 }
 
 .btn-primary{
-    &:hover{
+    &:hover, :focus{
         background: #907A7B;
         color: #F5F0E7;
     }
 }
 
 .btn-secondary{
-    &:hover{
+    &:hover, :focus{
         background-color: #907A7B;
     }
 }
 
 .btn-warning{
-    &:hover{
+    &:hover, :focus{
         background-color: #C0A4A5;
         color: #F5F0E7;
     }

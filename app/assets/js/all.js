@@ -38,9 +38,7 @@ AOS.init({
 
 });
 
-//swiper
-//only auto play
-var swiperAutoPlay = new Swiper(".swiper-auto-play", {
+const swiper = new Swiper(".swiper-auto-play", {
   spaceBetween: 30,  
   slidesPerView: 4.5,  //一次顯示數量
   slidesPerGroup: 2,   //滑動數量
@@ -74,37 +72,45 @@ var swiperAutoPlay = new Swiper(".swiper-auto-play", {
   },
 });
 
-//change + per column + row per group  //need to replace cdn to
-//<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-//<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+//swiper for recommend section
+const recommedSwiper = new Swiper(".swiper-per-column", {
 
-//swiper for index.html
-var swiperPerColumn = new Swiper(".swiper-per-column", {
-  slidesPerView: 2.5,  //一次顯示數量
-  slidesPerGroup: 1,   //滑動數量
-  slidesPerColumn: 2,  //一欄顯示多少行內容
   spaceBetween: 30,
-  slidesPerColumnFill: 'row',
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    992: {
-      slidesPerGroup: 1, 
-      slidesPerView: 2,
-      slidesPerColumn: 2,
-      
-    },
-    768: {
-      slidesPerGroup: 3,
-      slidesPerView: 1,
-      slidesPerColumn: 3,
-    },
+  slidesPerView: 1,
+  grid: {
+    rows: 3,
+    fill: 'row',
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+
+  breakpoints: {
+    576:{
+      spaceBetween: 15,
+      slidesPerView: 1.5,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+    },
+    768:{
+      spaceBetween: 30,
+      slidesPerView: 2.2,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+    },
+
+    992:{
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+    },
   },
 });
 
