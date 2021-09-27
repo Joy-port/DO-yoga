@@ -70,6 +70,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
@@ -88,7 +90,9 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0 position-sticky top-0 shadow-sm" style="z-index: 1000;" id="scroll-navbar-js">
+    <div class="bg-warning position-sticky top-0 shadow-sm"  style="z-index: 1000;">
+    <nav class="container">
+    <div class="navbar navbar-expand-lg navbar-light bg-warning py-0">
       <div class="container-fluid py-6">
         <a class="navbar-brand" href="index.html">
           <img
@@ -143,8 +147,9 @@
           </div>
         </div>
       </div>
-    </nav>
-
+    </div>
+  </nav>
+</div>
     <!-- reservation 版本 -->
     <nav class="d-none">
       <div class="container-lg pt-16">
@@ -193,15 +198,15 @@
       </div>
     </nav>
 
-    
+    <main>
 <!-- banner -->
   <section
-    class="bg-img bg-img-bottom vh-100-header"
+    class="bg-img bg-img-bottom vh-100-header bg-fixed"
     style="
       background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true);
     "
   >
-    <div class="container-lg d-flex flex-column justify-content-center h-100">
+    <div class="container d-flex flex-column justify-content-center h-100">
       <div class="offset-lg-1">
         <h2 class="h6 text-dark mb-2">健身輕時尚</h2>
         <h1 class="text-dark fs-4 fw-md">DOYOGA，做你的瑜珈</h1>
@@ -221,10 +226,9 @@
 </section>
 
 <!-- 瑜伽優點 -->
-<section class="container-lg pt-10 pb-12 pt-lg-12 pb-lg-16">
+<section class="container pt-10 pb-12 pt-lg-12 pb-lg-16">
     <h2 class="h4 fw-md text-center mb-1">感受身心，活在當下</h2>
     <p class="h6 text-secondary text-center mb-7">DOYOGA 可以帶給你...</p>
-
     <ul class="row">
       <li class="col-md-4 mb-5 mb-md-0" style="height: 420px">
         <div
@@ -276,11 +280,11 @@
 
 <!-- doyoga 師資介紹 -->
 <section class="bg-warning">
-  <div class="container-lg pt-10 pb-12 py-lg-16">
+  <div class="container pt-10 pb-12 py-lg-16">
     <div class="row">
       <div class="col-lg-6 d-none d-lg-block">
         <div
-          class="position-relative h-628 overflow-hidden border-0 rounded-5"
+          class="card h-628 overflow-hidden border-0 rounded-5"
         >
           <img
             class="
@@ -295,7 +299,7 @@
           />
         </div>
       </div>
-      <div class="col-lg-6 mx-md-auto">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
         <h2 class="h4 fw-md text-center text-lg-start mb-1">頂尖師資、專業教學</h2>
         <p class="h6 text-secondary text-md-center text-lg-start w- mb-7">
           強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。
@@ -308,12 +312,11 @@
                   src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-1.png?raw=true"
                   alt="yoga teacher"
                   class="me-5"
-                  style="width: 48px; height: 48px"
                 />
                 <div class="text-dark">
                   <a href="courses.html#teacher-info" class="h6 mb-1 link-dark stretched-link">Carol Tang 老師</a >
                   <p class="mb-1">教學經歷 10 年</p>
-                  <p class="">
+                  <p>
                     瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。
                   </p>
                 </div>
@@ -327,7 +330,6 @@
                   src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-2.png?raw=true"
                   alt="yoga teacher"
                   class="me-5"
-                  style="width: 48px; height: 48px"
                 />
                 <div class="text-dark">
                   <a href="courses.html#teacher-info" class="h6 link-dark mb-1 stretched-link">Kanae 老師</a> 
@@ -343,7 +345,6 @@
                   src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/teacher-3.png?raw=true"
                   alt="yoga teacher"
                   class="me-5"
-                  style="width: 48px; height: 48px"
                 />
                 <div class="text-dark">
                   <a href="courses.html#teacher-info" class="h6 link-dark mb-1 stretched-link">Asa Ifrit 老師</a>
@@ -360,14 +361,14 @@
 
 <!-- 環境介紹 1 -->
 <section
-  class="container-md py-13 py-md-14 py-lg-16">
+  class="container py-13 py-md-14 py-lg-16">
   <div class="row">
     <div class="col-md-6 col-lg-4 my-auto order-1 order-md-3">
       <h2 class="h4 mb-2 fw-md">舒適空間、靜心放鬆</h2>
       <p class="h6 text-secondary mb-5">
         我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。
       </p>
-      <a href="space.html" class="link-primary mb-5 mb-md-0"
+      <a href="space.html" class="d-flex link-primary mb-5 mb-md-0"
         >環境介紹
         <span class="material-icons-outlined align-middle ms-3">
           trending_flat
@@ -398,21 +399,22 @@
 
 <!-- 環境介紹 2 -->
 <section class="bg-warning">
-  <div class="container-md py-13 py-md-14 py-lg-16">
-    <div class="row">
+  <div class="container py-13 py-md-14 py-lg-16">
+    <div class="row flex-md-nowrap">
       <div class="col-md-6 my-auto">
         <h2 class="h4 mb-2 fw-md">精心設計、課程多元</h2>
         <p class="h6 text-secondary mb-5">
           教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。
         </p>
-        <a href="space.html" class="link-primary mb-5 mb-md-0"
+        <a href="space.html" class="d-flex link-primary mb-5 mb-md-0"
           >環境介紹<span class="material-icons-outlined align-middle ms-3">
             trending_flat
           </span></a
         >
       </div>
       <div class="col-md-6">
-        <div class="row gy-4 flex-lg-nowrap overflow-hidden align-items-center">
+        <div class="overflow-auto scrollbar">
+        <div class="row gy-4 flex-lg-nowrap align-items-center">
           <div class="col-6 col-lg-10">
             <div class="ratio ratio-1x1">
               <img
@@ -422,6 +424,7 @@
               />
             </div>
           </div>
+          <!-- 照片大小待條整 -->
           <div class="col-6 col-lg-10">
             <div class="ratio ratio-1x1">
               <img
@@ -450,14 +453,16 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
+    </div>
     </div>
   </div>
 </section>
 
 
 <!-- 課程方案選擇 -->
-<section class="container-lg pt-10 pb-13 pt-md-12 pb-md-14 pb-lg-16">
+<section class="container pt-10 pb-13 pt-md-12 pb-md-14 pb-lg-16">
   <div class="text-center">
     <h2 class="h4 fw-md mb-1">方案選擇</h2>
     <p class="h6 text-secondary mb-7">DOYOGA 可以帶給你...</p>
@@ -612,7 +617,7 @@
 
 <!-- 使用者評價 swiper -->
 <section class="bg-warning">
-  <div class="container-lg pt-10 pb-14 pt-md-12 pb-md-16">
+  <div class="container pt-10 pb-14 pt-md-12 pb-md-16">
     <h2 class="h4 fw-md text-center mb-7 mb-md-10">聽聽他們怎麼說</h2>
     <div class="swiper-container swiper-per-column">
       <ul class="swiper-wrapper">
@@ -995,25 +1000,19 @@
           </div>
         </li>
       </ul>
-      <div class="d-md-none">
-        <!-- change svg img -->
-        <div
-          class="swiper-button-prev"
-          style="
-            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yLjExNyAxMmw3LjUyNyA2LjIzNS0uNjQ0Ljc2NS05LTcuNTIxIDktNy40NzkuNjQ1Ljc2NC03LjUyOSA2LjIzNmgyMS44ODR2MWgtMjEuODgzeiIvPjwvc3ZnPg==);
-          "
-        ></div>
-        <div
-          class="swiper-button-next"
-          style="
-            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMS44ODMgMTJsLTcuNTI3IDYuMjM1LjY0NC43NjUgOS03LjUyMS05LTcuNDc5LS42NDUuNzY0IDcuNTI5IDYuMjM2aC0yMS44ODR2MWgyMS44ODN6Ii8+PC9zdmc+);
-          "
-        ></div>
+      <div class="d-flex justify-content-between d-md-none">
+        <a
+          class="d-flex swiper-btn-prev material-icons-outlined mt-2 link-primary h1"
+        >west</a>
+        <a 
+          class="d-flex swiper-btn-next material-icons-outlined mt-2 link-primary h1"
+        >east</a>
       </div>
     </div>
+
   </div>
 </section>
-
+</main>
     <footer class="bg-primary">
       <!-- subscribe -->
       <div class="border-bottom border-white">
@@ -1122,8 +1121,7 @@
         </a>
       </li>
     </ul>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>

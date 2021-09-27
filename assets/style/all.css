@@ -16,6 +16,10 @@
   color: #C0A4A5;
 }
 
+.bg-fixed {
+  background-attachment: fixed;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -22504,20 +22508,20 @@ img {
   }
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover, .btn-outline-primary :focus {
   color: #F5F0E7;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary :focus {
   background: #907A7B;
   color: #F5F0E7;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover, .btn-secondary :focus {
   background-color: #907A7B;
 }
 
-.btn-warning:hover {
+.btn-warning:hover, .btn-warning :focus {
   background-color: #C0A4A5;
   color: #F5F0E7;
 }
