@@ -8,17 +8,9 @@
 3. Simple and Fast website User Interface.
 
 ## Website Gallary
-### About Tab
-
-
-### Skills Tab
-
-
-### Demo
-For Demo of this template you can visit http://0xprateek-portfolio-template.rf.gd
-
-### Quick Start
-
+1. Applying with gulp / node.js / git to automate and enhance the workflow
+2. Customizing bootstrap 5 framework contributing with scss and BEM modules
+3. 
 
 
 ### License
