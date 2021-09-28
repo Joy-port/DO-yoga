@@ -1,6 +1,7 @@
 .card-img {
     object-fit: cover;
     object-position: center;
+    max-width: 100%;
   
     &-bottom {
       object-position: bottom;

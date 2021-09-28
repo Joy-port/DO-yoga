@@ -16,6 +16,23 @@ $utilities: map-merge(
         8: .8,
         9: .9,
     ),
+    "overflow":
+      map-merge(
+        map-get($utilities, "overflow"),
+        (
+          responsive: true,
+        )
+      ),
+    "overflow-x": (
+      responsive: true,
+      property: overflow-x,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-y": (
+      responsive: true,
+      property: overflow-y,
+      values: auto hidden visible scroll,
+    ),
     ),
     "border":
       map-merge(
@@ -234,6 +251,11 @@ $utilities: map-merge(
           ),
         )
       ),
+    "ratio":(property: --bs-aspect-ratio,
+    class: ratio,
+    responsive: true,
+    values: $aspect-ratios,
+    ),
   )
 );
 
@@ -252,12 +274,6 @@ $utilities: map-merge(
 
   &-bottom {
     background-position: center bottom;
-  }
-}
-
-.link-primary{
-  &:hover{
-    color: #C0A4A5;
   }
 }
 
