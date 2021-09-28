@@ -172,35 +172,30 @@ var swiperCourse = new Swiper(".swiper-course", {
   }
 }); //swiper for course.html
 
-var swiperAutoPlay2 = new Swiper(".swiper-teacher", {
-  spaceBetween: 30,
-  slidesPerView: 3.1,
-  //一次顯示數量
-  slidesPerGroup: 1,
-  //滑動數量
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true
+var teacherSwiper = new Swiper(".swiper-teacher", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  grid: {
+    rows: 4,
+    fill: 'row'
   },
   breakpoints: {
-    //由pc 轉為 mobile
-    992: {
-      slidesPerView: 2.1 //一次顯示數量 
-
-    },
     768: {
-      slidesPerView: 1 //一次顯示數量
-
+      slidesPerView: 2,
+      grid: {
+        rows: 1
+      },
+      spaceBetween: 30
+    },
+    992: {
+      slidesPerView: 3,
+      grid: {
+        rows: 1
+      },
+      spaceBetween: 30
     }
   },
-  direction: getDirection(),
-  on: {
-    resize: function resize() {
-      swiper.changeDirection(getDirection());
-    }
-  }
+  direction: 'horizontal'
 });
 
 function getDirection() {
