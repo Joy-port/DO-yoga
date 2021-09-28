@@ -38,43 +38,8 @@ AOS.init({
 
 });
 
-//swiper for space.html
-const swiper = new Swiper(".swiper-auto-play", {
-  spaceBetween: 30,  
-  slidesPerView: 4.5,  //一次顯示數量
-  slidesPerGroup: 2,   //滑動數量
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  breakpoints: {  //由pc 轉為 mobile
-    992: {
-      slidesPerView: 4,
-      slidesPerGroup: 2, 
-    },
-    768: {
-      slidesPerView: 3,
-      slidesPerGroup: 1, 
-    },
-    576: {
-      slidesPerView: 2,
-      slidesPerGroup: 1, 
-    },
-    414: {
-      slidesPerView: 1,
-      slidesPerGroup: 1, 
-    },
-   
-    
-  },
-  navigation: {
-    nextEl: ".sp-btn-next",
-    prevEl: ".sp-btn-prev",
-  },
-});
-
 //swiper for index.html
-const recommedSwiper = new Swiper(".swiper-per-column", {
+const recommendSwiper = new Swiper(".swiper-per-column", {
 
   spaceBetween: 30,
   slidesPerView: 1,
@@ -115,28 +80,66 @@ const recommedSwiper = new Swiper(".swiper-per-column", {
   },
 });
 
-//QQ 超怪的 如果不改變視窗大小，會跑版，但是改了之後又沒事了
-var swiperCourse = new Swiper(".swiper-course", {
+//swiper for space.html
+const swiper = new Swiper(".swiper-auto-play", {
   spaceBetween: 30,  
-  slidesPerView: 3,
-  slidesPerGroup: 1, 
-   breakpoints: {  //由pc 轉為 mobile
+  slidesPerView: 4.5,  //一次顯示數量
+  slidesPerGroup: 2,   //滑動數量
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {  //由pc 轉為 mobile
     992: {
-      slidesPerView: 3,   
+      slidesPerView: 4,
+      slidesPerGroup: 2, 
     },
     768: {
-      slidesPerView: 2.1,  //一次顯示數量 
+      slidesPerView: 3,
+      slidesPerGroup: 1, 
     },
     576: {
-      slidesPerView: 1.5,  //一次顯示數量
+      slidesPerView: 2,
+      slidesPerGroup: 1, 
     },
     414: {
-      slidesPerView: 1,  //一次顯示數量
-      slidesPerColumn: 3,
-      spaceBetween: 5,  
+      slidesPerView: 1,
+      slidesPerGroup: 1, 
+    },
+   
+    
+  },
+  navigation: {
+    nextEl: ".sp-btn-next",
+    prevEl: ".sp-btn-prev",
+  },
+});
+
+//QQ 超怪的 如果不改變視窗大小，會跑版，但是改了之後又沒事了
+var swiperCourse = new Swiper(".swiper-course", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  grid: {
+    rows: 3,
+    fill: 'row',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      grid: {
+        rows: 1, 
+      },
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      grid: {
+        rows: 1, 
+      },
+      spaceBetween: 30,
     },
   },
-
+  direction: 'horizontal',
 });
 
 //swiper for course.html
@@ -206,19 +209,19 @@ $(function() {
     const courseType = $(this).attr('data-tag'); //getAttribute
     const courseChosen = $(this).attr('data-card');
       //切換選擇項目
-      $('.swiper-slide .card').removeClass('border-4').removeClass('border-white');
+      $('.swiper-slide .card').removeClass('border-white');
       $('.swiper-slide .check').addClass('opacity-5');
   
       if(courseType == 'first' || courseChosen == 'first'){
-        $('#card1').addClass('border-4').addClass('border-white');
+        $('#card1').addClass('border-white');
         $('#card1 .check').removeClass('opacity-5');
         
       }else if(courseType == 'short' || courseChosen == 'short'){
-        $('#card2').addClass('border-4').addClass('border-white');
+        $('#card2').addClass('border-white');
         $('#card2 .check').removeClass('opacity-5');
         
       }else if(courseType == 'long' || courseChosen == 'long'){
-        $('#card3').addClass('border-4').addClass('border-white');
+        $('#card3').addClass('border-white');
         $('#card3 .check').removeClass('opacity-5');
         
       }
