@@ -1,3 +1,11 @@
+
+.img-1{
+  max-height: 48px;
+  @include media-breakpoint-up(md) {
+    max-height: 96px;
+  }
+}
+
 .img-2{
   max-height: 60px;
 }
@@ -19,7 +27,6 @@
 }
 
 
-
 .vh-100 {
     &-header {
       height: calc(100vh - 80px);
@@ -39,3 +46,7 @@
   .bg-fixed{
     background-attachment: fixed;
   }
+
+.text-shadow{
+  text-shadow: .05rem 0.05rem 0.15rem #434a54;
+}

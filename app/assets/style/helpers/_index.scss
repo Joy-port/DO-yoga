@@ -1,10 +1,5 @@
 /* index.html */
-.img-1{
-  max-height: 48px;
-  @include media-breakpoint-up(md) {
-    max-height: 96px;
-  }
-}
+
 .img-xs-s {
   max-height: 196px;
   @include media-breakpoint-up(md) {
@@ -12,17 +7,6 @@
   }
   @include media-breakpoint-up(lg) {
     max-height: 196px;
-  }
-}
-
-
-.img-l-m-l {
-  max-height: 350px;
-  @include media-breakpoint-up(md) {
-    max-height: 216px;
-  }
-  @include media-breakpoint-up(lg) {
-    max-height: 350px;
   }
 }
 

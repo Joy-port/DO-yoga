@@ -38,6 +38,7 @@ AOS.init({
 
 });
 
+//swiper for space.html
 const swiper = new Swiper(".swiper-auto-play", {
   spaceBetween: 30,  
   slidesPerView: 4.5,  //一次顯示數量
@@ -72,7 +73,7 @@ const swiper = new Swiper(".swiper-auto-play", {
   },
 });
 
-//swiper for recommend section
+//swiper for index.html
 const recommedSwiper = new Swiper(".swiper-per-column", {
 
   spaceBetween: 30,
