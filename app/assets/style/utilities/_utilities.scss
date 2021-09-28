@@ -1,0 +1,41 @@
+.img-2{
+  max-height: 60px;
+}
+
+.img-3{
+  height: 95px;
+}
+
+.img-4{
+  max-height: 165px;
+
+  @include media-breakpoint-up(md) {
+    max-height: 418px;
+  }
+}
+
+.img-5{
+  max-height: 400px;
+}
+
+
+
+.vh-100 {
+    &-header {
+      height: calc(100vh - 80px);
+    }
+  }
+  
+  .bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    &-bottom {
+      background-position: center bottom;
+    }
+  }
+  
+  .bg-fixed{
+    background-attachment: fixed;
+  }

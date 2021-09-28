@@ -258,25 +258,3 @@ $utilities: map-merge(
     ),
   )
 );
-
-
-
-.vh-100 {
-  &-header {
-    height: calc(100vh - 80px);
-  }
-}
-
-.bg-img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  &-bottom {
-    background-position: center bottom;
-  }
-}
-
-.bg-fixed{
-  background-attachment: fixed;
-}

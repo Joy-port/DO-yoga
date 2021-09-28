@@ -1,24 +1,21 @@
 /* width */
 
-.scrollbar {
+.scrollbar-color{
+  margin-bottom: .3rem;
   &::-webkit-scrollbar {
-    width: 0.5rem; // y軸 用 w
-    height: 0.5rem; //x軸 用 h
+    height: 0.3rem; //x軸 用 h
   }
 
   /* Track */
   &::-webkit-scrollbar-track {
-    background-color: #c0a4a5;
+    border-radius: 3px;
+    background-color: #C0A4A5;
   }
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background-color: #907a7b;
-    border-radius: 1rem;
+    border-radius: 3px;
+    background-color: #907a7bCC;
   }
 
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: #f5f0e7;
-  }
 }

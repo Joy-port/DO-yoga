@@ -2,15 +2,19 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/utilities";
-@import "./helpers/utilities";
-
+@import "./utilities/bootstrapUtilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import "./helpers/base";
+@import "./base/base";
+
+@import "./utilities/utilities";
+
 @import "./helpers/index";
 @import "./helpers/hover";
-@import "./helpers/datepicker";
+
 
 @import "./components/loader";
 @import "./components/card";
 @import "./components/scrollbar";
+
+@import "./vendor/datepicker";
