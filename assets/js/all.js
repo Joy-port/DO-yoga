@@ -72,7 +72,8 @@ AOS.init({
   // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 
-});
+}); //swiper for space.html
+
 var swiper = new Swiper(".swiper-auto-play", {
   spaceBetween: 30,
   slidesPerView: 4.5,
@@ -106,7 +107,7 @@ var swiper = new Swiper(".swiper-auto-play", {
     nextEl: ".sp-btn-next",
     prevEl: ".sp-btn-prev"
   }
-}); //swiper for recommend section
+}); //swiper for index.html
 
 var recommedSwiper = new Swiper(".swiper-per-column", {
   spaceBetween: 30,
