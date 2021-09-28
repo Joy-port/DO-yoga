@@ -19,8 +19,9 @@
 
 .btn-warning{
     &:hover, :focus{
-        background-color: #C0A4A5;
-        color: #F5F0E7;
+        background-color: #907A7B;
+        color: #F5F0E7 !important;
+        border-color:transparent;
     }
 }
 

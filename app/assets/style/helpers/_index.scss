@@ -10,6 +10,14 @@
   max-height: 60px;
 }
 
+.img-3{
+  height: 95px;
+}
+
+.img-4{
+  max-height: 400px;
+}
+
 .img-xs-s {
   max-height: 196px;
   @include media-breakpoint-up(md) {
