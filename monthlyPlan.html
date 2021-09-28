@@ -40,6 +40,7 @@
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
     ></script>
+    <link rel="icon" href="./assets/images/logo/logo.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -72,7 +73,6 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
@@ -90,66 +90,74 @@
     </div>
 
     <!-- navbar -->
-    <div class="bg-warning position-sticky top-0 shadow-sm"  style="z-index: 1000;">
-    <nav class="container">
-    <div class="navbar navbar-expand-lg navbar-light bg-warning py-0">
-      <div class="container-fluid py-6">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="./assets/images/logo/logo-main.png"
-            alt="logo"
-            style="width: 96px; height: 31px"
-        /></a>
-        <button
-          class="navbar-toggler border-0 link-secondary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- pc 置中 mx-auto 可以延伸 -->
-          <ul class="navbar-nav text-center mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+    <div
+      class="bg-warning position-sticky top-0 shadow-sm"
+      style="z-index: 1000"
+    >
+      <nav class="container">
+        <div class="navbar navbar-expand-lg navbar-light bg-warning py-0">
+          <div class="container-fluid py-6">
+            <h1 class="logo">
               <a
-                class="nav-link px-5 py-2 py-lg-0"
-                aria-current="page"
-                href="courses.html"
-                >課程介紹</a
+                class="navbar-brand bg-img"
+                href="index.html"
+                style="
+                  background-image: url(./assets/images/logo/logo-main.png);
+                "
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-5 py-2 py-lg-0" href="space.html"
-                >瑜珈空間</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link px-5 py-2 py-lg-0" href="monthlyPlan.html"
-                >當月課表</a
-              >
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center | flex-lg-row">
-            <a
-              href="reservation-course.html"
-              class="btn btn-outline-primary rounded-5 fs-7 btn-lg me-4"
-              >立即預約</a
+                DOYOGA，做你的瑜珈
+              </a>
+            </h1>
+            <button
+              class="navbar-toggler border-0 link-secondary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-            <a
-              href="contact.html"
-              class="btn btn-outline-primary rounded-5 fs-7 btn-lg"
-              >聯絡我們</a
-            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- pc 置中 mx-auto 可以延伸 -->
+              <ul class="navbar-nav text-center mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-5 py-2 py-lg-0"
+                    aria-current="page"
+                    href="courses.html"
+                    >課程介紹</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-5 py-2 py-lg-0" href="space.html"
+                    >瑜珈空間</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link px-5 py-2 py-lg-0" href="monthlyPlan.html"
+                    >當月課表</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center | flex-lg-row">
+                <a
+                  href="reservation-course.html"
+                  class="btn btn-outline-primary rounded-5 fs-7 btn-lg me-4"
+                  >立即預約</a
+                >
+                <a
+                  href="contact.html"
+                  class="btn btn-outline-primary rounded-5 fs-7 btn-lg"
+                  >聯絡我們</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
-  </nav>
-</div>
     <!-- reservation 版本 -->
     <nav class="d-none">
       <div class="container-lg pt-16">
@@ -445,11 +453,13 @@
         align-items-center
         me-4
         d-none      "
-      style="z-index: 1000;"
+      style="z-index: 1000"
     >
       <li class="mb-2">
-        <a href="#" class="link-primary d-block ">
-          <i class="fab fa-facebook fa-3x shadow-sm border-2 rounded-circle"></i>
+        <a href="#" class="link-primary d-block">
+          <i
+            class="fab fa-facebook fa-3x shadow-sm border-2 rounded-circle"
+          ></i>
         </a>
       </li>
       <li class="mb-2">
@@ -463,6 +473,7 @@
         </a>
       </li>
     </ul>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 

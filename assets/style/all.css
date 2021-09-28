@@ -8229,6 +8229,10 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: calc(21 / 45 * 100%);
 }
 
+.ratio-54x63 {
+  --bs-aspect-ratio: calc(63 / 54 * 100%);
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -11640,6 +11644,10 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: calc(21 / 45 * 100%) !important;
 }
 
+.ratio-54x63 {
+  --bs-aspect-ratio: calc(63 / 54 * 100%) !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -13831,6 +13839,9 @@ fieldset:disabled .btn {
   }
   .ratio-sm-45x21 {
     --bs-aspect-ratio: calc(21 / 45 * 100%) !important;
+  }
+  .ratio-sm-54x63 {
+    --bs-aspect-ratio: calc(63 / 54 * 100%) !important;
   }
 }
 
@@ -16026,6 +16037,9 @@ fieldset:disabled .btn {
   .ratio-md-45x21 {
     --bs-aspect-ratio: calc(21 / 45 * 100%) !important;
   }
+  .ratio-md-54x63 {
+    --bs-aspect-ratio: calc(63 / 54 * 100%) !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -18219,6 +18233,9 @@ fieldset:disabled .btn {
   }
   .ratio-lg-45x21 {
     --bs-aspect-ratio: calc(21 / 45 * 100%) !important;
+  }
+  .ratio-lg-54x63 {
+    --bs-aspect-ratio: calc(63 / 54 * 100%) !important;
   }
 }
 
@@ -20414,6 +20431,9 @@ fieldset:disabled .btn {
   .ratio-xl-45x21 {
     --bs-aspect-ratio: calc(21 / 45 * 100%) !important;
   }
+  .ratio-xl-54x63 {
+    --bs-aspect-ratio: calc(63 / 54 * 100%) !important;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -22608,6 +22628,9 @@ fieldset:disabled .btn {
   .ratio-xxl-45x21 {
     --bs-aspect-ratio: calc(21 / 45 * 100%) !important;
   }
+  .ratio-xxl-54x63 {
+    --bs-aspect-ratio: calc(63 / 54 * 100%) !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -22794,36 +22817,13 @@ i {
   text-shadow: .05rem 0.05rem 0.15rem #434a54;
 }
 
-.box-shadow {
-  -webkit-box-shadow: 0px 3px 6px #00000029;
-          box-shadow: 0px 3px 6px #00000029;
-}
-
-/* index.html */
-.img-xs-s {
-  max-height: 196px;
-}
-
-@media (min-width: 768px) {
-  .img-xs-s {
-    max-height: 161px;
-  }
-}
-
-@media (min-width: 992px) {
-  .img-xs-s {
-    max-height: 196px;
-  }
-}
-
-.img-s-m-2 {
-  max-height: 218px;
-}
-
-@media (min-width: 768px) {
-  .img-s-m-2 {
-    max-height: 341px;
-  }
+.logo a {
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 96px;
+  height: 31px;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary :focus {
