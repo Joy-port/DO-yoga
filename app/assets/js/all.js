@@ -14,8 +14,10 @@
     $(".loader").remove();
   });
 
-//Aos
-AOS.init();
+//Aos 只呈現一次·不會消失
+AOS.init({
+  once: true,
+});
 AOS.refresh();
 
 //lax
