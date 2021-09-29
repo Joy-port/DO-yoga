@@ -37,9 +37,11 @@
 
 $(window).on("load", function () {
   $(".loader").remove();
-}); //Aos
+}); //Aos 只呈現一次·不會消失
 
-AOS.init();
+AOS.init({
+  once: true
+});
 AOS.refresh(); //lax
 
 window.onload = function () {

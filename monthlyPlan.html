@@ -90,74 +90,84 @@
     </div>
 
     <!-- navbar -->
-    <div
-      class="bg-warning position-sticky top-0 shadow-sm"
-      style="z-index: 1000"
-    >
-      <nav class="container">
-        <div class="navbar navbar-expand-lg navbar-light bg-warning py-0">
-          <div class="container-fluid py-6">
-            <h1 class="logo">
-              <a
-                class="navbar-brand bg-img"
-                href="index.html"
-                style="
-                  background-image: url(./assets/images/logo/logo-main.png);
-                "
+    <nav class="overflow-hidden">
+      <div
+        class="bg-warning position-sticky top-0 shadow-sm"
+        style="z-index: 1000"
+        data-aos="fade"  
+        data-aos-duration="300"
+      >
+        <div class="container">
+          <div class="navbar navbar-expand-lg navbar-light bg-warning py-0">
+            <div class="container-fluid py-6"         
+            data-aos="slide-down"  
+            data-aos-duration="700"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out-shine">
+              <h1 class="logo">
+                <a
+                  class="navbar-brand bg-img"
+                  href="index.html"
+                  style="
+                    background-image: url(./assets/images/logo/logo-main.png);
+                  "
+                >
+                  DOYOGA，做你的瑜珈
+                </a>
+              </h1>
+              <button
+                class="navbar-toggler border-0 link-secondary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-                DOYOGA，做你的瑜珈
-              </a>
-            </h1>
-            <button
-              class="navbar-toggler border-0 link-secondary"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <!-- pc 置中 mx-auto 可以延伸 -->
-              <ul class="navbar-nav text-center mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- pc 置中 mx-auto 可以延伸 -->
+                <ul class="navbar-nav text-center mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link px-5 py-2 py-lg-0"
+                      aria-current="page"
+                      href="courses.html"
+                      >課程介紹</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-5 py-2 py-lg-0" href="space.html"
+                      >瑜珈空間</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link px-5 py-2 py-lg-0"
+                      href="monthlyPlan.html"
+                      >當月課表</a
+                    >
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-center | flex-lg-row">
                   <a
-                    class="nav-link px-5 py-2 py-lg-0"
-                    aria-current="page"
-                    href="courses.html"
-                    >課程介紹</a
+                    href="reservation-course.html"
+                    class="btn btn-outline-primary rounded-5 fs-7 btn-lg me-4"
+                    >立即預約</a
                   >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-5 py-2 py-lg-0" href="space.html"
-                    >瑜珈空間</a
+                  <a
+                    href="contact.html"
+                    class="btn btn-outline-primary rounded-5 fs-7 btn-lg"
+                    >聯絡我們</a
                   >
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link px-5 py-2 py-lg-0" href="monthlyPlan.html"
-                    >當月課表</a
-                  >
-                </li>
-              </ul>
-              <div class="d-flex justify-content-center | flex-lg-row">
-                <a
-                  href="reservation-course.html"
-                  class="btn btn-outline-primary rounded-5 fs-7 btn-lg me-4"
-                  >立即預約</a
-                >
-                <a
-                  href="contact.html"
-                  class="btn btn-outline-primary rounded-5 fs-7 btn-lg"
-                  >聯絡我們</a
-                >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <!-- reservation 版本 -->
     <nav class="d-none">
       <div class="container-lg pt-16">
@@ -473,7 +483,7 @@
         </a>
       </li>
     </ul>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
