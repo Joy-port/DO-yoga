@@ -5,6 +5,8 @@
 @import "./utilities/bootstrapUtilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "../../../node_modules/hover.css/scss/hover.scss";
+
 @import "./base/base";
 
 @import "./utilities/utilities";
@@ -15,4 +17,4 @@
 @import "./components/card";
 @import "./components/scrollbar";
 
-@import "./vendor/datepicker";
+@import "./vendors/datepicker";
