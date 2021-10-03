@@ -27903,7 +27903,13 @@ i {
 }
 
 .bg-img-bottom {
-  background-position: center bottom;
+  background-position: -30rem bottom;
+}
+
+@media (min-width: 768px) {
+  .bg-img-bottom {
+    background-position: center bottom;
+  }
 }
 
 .bg-fixed {
