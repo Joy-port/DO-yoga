@@ -38,7 +38,10 @@
   background-repeat: no-repeat;
 
   &-bottom {
-    background-position: center bottom;
+    background-position: -30rem bottom;
+    @include media-breakpoint-up(md) {
+      background-position: center bottom;
+    }
   }
 }
   
